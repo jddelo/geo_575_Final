@@ -17,8 +17,8 @@ $(function () {
 
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
-    //places = L.esri.tiledMapLayer({
-       // url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'});
+    places = L.esri.tiledMapLayer({
+    url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'}),
     fires = L.esri.Heat.featureLayer({
     //url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/CommunityAddressing/MapServer/0',
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
@@ -31,7 +31,7 @@ function createMap(){
     var mymap = L.map('mapid', {
         center: [39, -95],
         zoom: 2,
-        layers: [imagery, fires]
+        layers: [imagery, places, fires]
     });
     
 
@@ -44,6 +44,7 @@ function createMap(){
         "Topographic": topo
     }
     var overlayMaps = {
+        "Places": places,
         "Fires": fires
     }
 

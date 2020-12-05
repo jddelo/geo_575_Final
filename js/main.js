@@ -310,19 +310,31 @@ function getCircleValues(mymap, attribute){
 };
 
 //use ajax to get geojson data, pass the response data into the functions
-function getData(mymap){
+function getData(map){
     //load the data
-    $.ajax("data/CancerStats.geojson", {
+    $.ajax("data/1999-2019_V3.geojson", {
         dataType: "json",
         success: function(response){
-            var attributes = processData(response);
-            createPropSymbols(response,mymap, attributes);
-            createSequenceControls(mymap, attributes);
-            createLegend(mymap, attributes);
-            
+
+            //create a Leaflet GeoJSON layer and add it to the map
+            L.geoJson(response).addTo(map);
         }
     });
 };
+
+//function getData(mymap){
+//    //load the data
+//    $.ajax("data/CancerStats.geojson", {
+//        dataType: "json",
+//        success: function(response){
+//            var attributes = processData(response);
+//            createPropSymbols(response,mymap, attributes);
+//            createSequenceControls(mymap, attributes);
+//            createLegend(mymap, attributes);
+//            
+//        }
+//    });
+//};
 
 
 //create the map when the dom is ready

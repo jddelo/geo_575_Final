@@ -13,7 +13,7 @@ $(function () {
 });   
 
 //create variables for background data sources
-
+//url for drought data: https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
     fires = L.esri.Heat.featureLayer({

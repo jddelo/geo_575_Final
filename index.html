@@ -6,24 +6,46 @@
 		<title></title>
 
 		<!--put your external stylesheet links here-->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="lib/jquery-ui-1.12.1/jquery-ui.css">
 		<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+		<link rel="stylesheet" href="css/style.css">
+	
+		
 		<!--[if IE<9]>
 			<link rel="stylesheet" href="css/style.ie.css">
 		<![endif]-->
 	</head>
 
 	<body>
-		<!--put your initial page content here-->
-			
-		<!--you can also use this space for internal scripts or stylesheets;
-		place these within <script> or <style> tags-->
-
-		<!--put your external script links here-->
-		<div id="mydiv"></div>
+		<!--create information window for users giving map summary and data sources-->
+		<div id="infowindow" visibility: hidden title = "Map Information"><p><b><u>Cancer Mortalities by State 1999-2017</u></b><br>
+			This map illustrates the cancer mortalites every other year from 1999-2017 in each state using proportional symbols.<br><br>
+			<b><u>How to use:</u></b><br><br>
+			Use the slider or direction arrows to toggle between years.  The legend will update the symbol size and mortalities for the year 
+			selected. You can toggle the basemap between aerial imagery and topographic, and also turn off the borders/places for more control using the icon in the upper-right portion of the map.
+			<br><br>
+			<b><u>Data Sources:</u></b><br><br>
+			-United States Cancer Statistics - Mortality: 1999 - 2017, WONDER Online Database. United States Department"
+			"of Health and Human Services, Centers for Disease Control and Prevention; 2020. Accessed at"
+			"http://wonder.cdc.gov/CancerMort-v2017.html on Oct 7, 2020 8:46:38 PM<br>
+			-Icons: Arrow by Alice Design from the Noun Project, 
+			Info by joe pictos from the Noun Project</p></div>
+		<!--create div for map title and info button-->
+		<div id="maptitle"><p id="mapT">Cancer Mortalities by State 1999-2017
+		<button class = "info"><img src = 'img/info.png' ></button></p></div>
+		
+		<div id="mapid"></div>
+		<!--links to javascript files, libraries and esri plugin-->
 		<script type="text/javascript" src ="lib/leaflet/leaflet.js"></script>
 		<script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+		<script type="text/javascript" src= "lib/jquery-ui-1.12.1//jquery-ui.js"></script>
+		<script src="https://unpkg.com/esri-leaflet@2.5.1/dist/esri-leaflet.js"
+    integrity="sha512-q7X96AASUF0hol5Ih7AeZpRF6smJS55lcvy+GLWzJfZN+31/BQ8cgNx2FGF+IQSA4z2jHwB20vml+drmooqzzQ=="
+	crossorigin=""></script>
+		<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+		<script src="https://unpkg.com/esri-leaflet-heatmap@2.0.0"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		
 
 	</body>
 </html>

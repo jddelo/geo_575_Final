@@ -1,0 +1,103 @@
+#maptitle {
+    height: auto;
+    background-color: #848482;
+    vertical-align: middle;
+    border-style: solid;
+    border-color: #353839;
+}
+
+#mapT {
+    padding: 12.5px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0em;
+    color: #E5E4E2;
+    font-family:"palatino","bookman";
+    font-size: 1.5em;
+    text-shadow: 1.5px 1.5px #727472; 
+}
+
+.leaflet-popup-content p {
+    margin: 0.2em;
+}
+
+#mapid {
+    height: 500px;
+    width: 100%;
+    display: inline-block;
+}
+
+.leaflet-bottom.leaflet-left .legend-control-container.leaflet-control {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    background-color: #848482;
+    border-style: solid;
+    border-color: #353839;
+    margin-bottom: 26px;
+}
+
+.sequence-control-container.leaflet-control{
+    text-align: center;
+    vertical-align: middle;
+    background-color: #848482;
+    border-style: solid;
+    border-color: #353839;
+}
+
+#attribute-legend {
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#temporal-legend {
+    width: auto;
+    height: 30%;
+    margin: 4px;
+    text-align: center;
+    color: #E5E4E2;
+    font-family:"palatino","bookman";
+    font-size: 1.2em;
+    text-shadow: 1.5px 1.5px #727472; 
+}
+
+#forward {
+    float: right;
+    background-color:  #848482;
+    border-color: transparent;
+}
+
+#forward:hover{
+    background-color:#E5E4E2;
+}
+
+#reverse {
+    float:left;
+    background-color:  #848482;
+    border-color: transparent;
+}
+
+#reverse:hover{
+    background-color:#E5E4E2;
+}
+
+.range-slider {
+    width: 100px;
+}
+
+.info {
+    background-color: #848482;
+    float: right;
+    margin-right: 16px;
+}
+
+.info:hover {
+    background-color:#E5E4E2;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    z-index: 1000;
+}

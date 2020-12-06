@@ -12,13 +12,17 @@ $(function () {
 
 });   
 
-//create variables for background data sources
-//url for drought data: https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0
-
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
+    gray = L.esri.basemapLayer('DarkGray'),
+    
     places = L.esri.tiledMapLayer({
     url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'}),
+    
+    drought = L.esri.featureLayer({
+    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
+    radius: 60}),
+
     fires = L.esri.Heat.featureLayer({
     //url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/CommunityAddressing/MapServer/0',
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
@@ -30,22 +34,24 @@ function createMap(){
     
     var mymap = L.map('mapid', {
         center: [39, -95],
-        zoom: 2,
-        layers: [imagery, places, fires]
+        zoom: 4,
+        layers: [imagery, places, fires, drought]
     });
     
 
     //call getData function
-    getData(mymap);
+    //getData(mymap);
     
     //get layers and add to layer control operator
     var baseMaps = {
         "Imagery": imagery,
-        "Topographic": topo
+        "Topographic": topo,
+        "Gray": gray
     }
     var overlayMaps = {
         "Places": places,
-        "Fires": fires
+        "Fires": fires,
+        "Drought": drought
     }
 
     L.control.layers(baseMaps, overlayMaps).addTo(mymap);
@@ -314,17 +320,17 @@ function getCircleValues(mymap, attribute){
 };
 
 //use ajax to get geojson data, pass the response data into the functions
-function getData(map){
-    //load the data
-    $.ajax("data/1999-2019_V3.geojson", {
-        dataType: "json",
-        success: function(response){
-
-            //create a Leaflet GeoJSON layer and add it to the map
-            L.geoJson(response).addTo(map);
-        }
-    });
-};
+//function getData(map){
+//    //load the data
+//    $.ajax("data/1999-2019_V3.geojson", {
+//        dataType: "json",
+//        success: function(response){
+//
+//            //create a Leaflet GeoJSON layer and add it to the map
+//            L.geoJson(response).addTo(map);
+//        }
+//    });
+//};
 
 //function getData(mymap){
 //    //load the data

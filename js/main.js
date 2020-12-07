@@ -23,7 +23,23 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     
     drought = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
-    radius: 60}),
+    simplifyFactor: 0.5,
+    style: function (feature){
+        if (feature.properties.DM === 4) {
+            return {fillcolor: '#73004C', fillOpacity: '0.5'};
+        } else if (feature.properties.DM === 3) {
+            return {fillcolor: '#A80084', fillOpacity: '0.5'};
+        } else if (feature.properties.DM === 2) {
+            return {fillcolor: '#E69800', fillOpacity: '0.5'};
+        } else if (feature.properties.DM === 1) {
+            return {fillcolor: '#FFAA00', fillOpacity: '0.5'};
+        } else {
+            return {fillcolor: '#FFFFBE', fillOpacity: '0.5'};
+        }
+
+        
+    
+    }}),
 
     fires = L.esri.Heat.featureLayer({
     //url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/CommunityAddressing/MapServer/0',

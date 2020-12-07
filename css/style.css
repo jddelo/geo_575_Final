@@ -1,4 +1,5 @@
 #maptitle {
+    display: inline-block;
     background-color: #848482;
     vertical-align: middle;
     border-style: solid;

@@ -1,6 +1,4 @@
 #maptitle {
-    width: 100%;
-    display: inline-block;
     background-color: #848482;
     vertical-align: middle;
     border-style: solid;
@@ -9,9 +7,7 @@
 
 #mapT {
     padding: 12.5px;
-    display: inline-block;
     text-align: center;
-    width: 100%;
     margin: 0em;
     color: #E5E4E2;
     font-family:"palatino","bookman";

@@ -1,0 +1,13 @@
+DO
+$do$
+BEGIN 
+   FOR i IN 1..25 LOOP
+      INSERT INTO playtime.meta_random_sample
+         (col_i, col_id)                       -- declare target columns!
+      SELECT  i,     id
+      FROM   tbl
+      ORDER  BY random()
+      LIMIT  15000;
+   END LOOP;
+END
+$do$;

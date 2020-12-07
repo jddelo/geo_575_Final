@@ -36,9 +36,6 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
         } else {
             return {fillcolor: '#FFFFBE', fillOpacity: '0.5'};
         }
-
-        
-    
     }}),
 
     fires = L.esri.Heat.featureLayer({

@@ -3,7 +3,6 @@
 $(function () {
     $("#infowindow").dialog({
         autoOpen: false,
-        height: 400px
     
     });
     $(".info").click(function(){

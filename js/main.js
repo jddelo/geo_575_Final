@@ -22,6 +22,11 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     places = L.esri.tiledMapLayer({
     url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'}),
     
+    fires = L.esri.featureLayer({
+    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
+    minZoom: 7
+    }),
+
     drought = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
     simplifyFactor: 0.5,
@@ -38,14 +43,10 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
             return {fillcolor: '#FFFFBE', fillOpacity: '0.5'};
         }
     }}),
+
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
     style: {fillcolor: 'none'}
-    })
-    
-    fires = L.esri.featureLayer({
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
-    minZoom: 7
     });
 
 
@@ -55,7 +56,7 @@ function createMap(){
     var mymap = L.map('mapid', {
         center: [39, -95],
         zoom: 4,
-        layers: [imagery, places, drought, states, fires]
+        layers: [imagery, places, fires, drought, states]
     });
     
 
@@ -71,7 +72,8 @@ function createMap(){
     var overlayMaps = {
         "Places": places,
         "Fires": fires,
-        "Drought": drought
+        "Drought": drought, 
+        "States": states
     }
 
     L.control.layers(baseMaps, overlayMaps).addTo(mymap);

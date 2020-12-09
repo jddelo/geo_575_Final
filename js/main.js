@@ -35,24 +35,25 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     timeField: 'modate',
     from: new Date('01/01/2000'),
     to: new Date('01/31/2000'),
+    ignoreRenderer: true,
     style: function (feature){
         if (feature.properties.DM === 4) {
-            return {fillcolor: '#73004C', fillOpacity: '0.5'};
+            return {fillColor: '#73004C', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 3) {
-            return {fillcolor: '#A80084', fillOpacity: '0.5'};
+            return {fillColor: '#A80084', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 2) {
-            return {fillcolor: '#E69800', fillOpacity: '0.5'};
+            return {fillColor: '#E69800', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 1) {
-            return {fillcolor: '#FFAA00', fillOpacity: '0.5'};
+            return {fillColor: '#FFAA00', fillOpacity: '0.5'};
         } else {
-            return {fillcolor: '#FFFFBE', fillOpacity: '0.5'};
+            return {fillColor: '#FFFFBE', fillOpacity: '0.5'};
         }
     }}),
 
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
     useCors: true,
-    style: {fillcolor: 'none'}
+    style: {fillColor: 'none'}
     });
 
 

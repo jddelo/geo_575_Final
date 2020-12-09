@@ -40,7 +40,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     }}),
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
-    style: {fillcolor: none}
+    style: {fillcolor: 'none'}
     })
     
     fires = L.esri.featureLayer({

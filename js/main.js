@@ -44,7 +44,6 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     })
     
     fires = L.esri.featureLayer({
-    //url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/CommunityAddressing/MapServer/0',
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
     minZoom: 7
     });
@@ -76,6 +75,8 @@ function createMap(){
     }
 
     L.control.layers(baseMaps, overlayMaps).addTo(mymap);
+
+    createSequenceControls(mymap, attributes);
 };
 
 

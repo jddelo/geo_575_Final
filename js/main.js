@@ -24,12 +24,17 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     
     fires = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
-    minZoom: 7
+    minZoom: 7, 
+    useCors: true
     }),
 
     drought = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
     simplifyFactor: 0.5,
+    useCors: true,
+    timeField: 'modate',
+    from: new Date('01/01/2000'),
+    to: new Date('01/31/2000'),
     style: function (feature){
         if (feature.properties.DM === 4) {
             return {fillcolor: '#73004C', fillOpacity: '0.5'};
@@ -46,6 +51,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
 
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
+    useCors: true,
     style: {fillcolor: 'none'}
     });
 
@@ -78,7 +84,7 @@ function createMap(){
 
     L.control.layers(baseMaps, overlayMaps).addTo(mymap);
 
-    createSequenceControls(mymap, attributes);
+    createSequenceControls(mymap);
 };
 
 
@@ -115,7 +121,7 @@ function updatePropSymbols(mymap,attribute){
 };
 
 //create sequence controls for map data
-function createSequenceControls(mymap, attributes){
+function createSequenceControls(mymap){
     //extend the leaflet control class
     var SequenceControl = L.Control.extend({
         options: {
@@ -137,7 +143,7 @@ function createSequenceControls(mymap, attributes){
 
     //set properties for range slider
     $('.range-slider').attr({
-        max: 9,
+        max: 227,
         min: 0,
         value: 0,
         step: 1

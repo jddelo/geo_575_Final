@@ -14,6 +14,7 @@ $(function () {
 
 });   
 
+
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
     gray = L.esri.basemapLayer('DarkGray'),
@@ -37,11 +38,15 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
             return {fillcolor: '#FFFFBE', fillOpacity: '0.5'};
         }
     }}),
-
-    fires = L.esri.Heat.featureLayer({
+    states = L.esri.featureLayer({
+    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
+    style: {fillcolor: none}
+    })
+    
+    fires = L.esri.featureLayer({
     //url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/CommunityAddressing/MapServer/0',
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
-    radius: 60});
+    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0'
+    });
 
 
 //create map
@@ -50,7 +55,7 @@ function createMap(){
     var mymap = L.map('mapid', {
         center: [39, -95],
         zoom: 4,
-        layers: [imagery, places, fires, drought]
+        layers: [imagery, places, drought, states, fires]
     });
     
 

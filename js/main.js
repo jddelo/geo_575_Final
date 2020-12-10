@@ -30,13 +30,15 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
 
     drought = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
-    simplifyFactor: 0.5,
+    //simplifyFactor: 0.35,
     useCors: true,
+    where: "ddate = '01/04/2000'",
     timeField: 'modate',
-    from: new Date('01/01/2000'),
-    to: new Date('01/31/2000'),
-    ignoreRenderer: true,
-    style: function (feature){
+    //precision: 5,
+    //from: new Date('01/01/2000'),
+    //to: new Date('01/31/2000')
+   // ignoreRenderer: true,
+    /*style: function (feature){
         if (feature.properties.DM === 4) {
             return {fillColor: '#73004C', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 3) {
@@ -48,7 +50,8 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
         } else {
             return {fillColor: '#FFFFBE', fillOpacity: '0.5'};
         }
-    }}),
+    } */
+    }),
 
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',

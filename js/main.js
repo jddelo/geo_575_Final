@@ -46,15 +46,15 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
    // ignoreRenderer: true,
     style: function (feature){
         if (feature.properties.DM === 4) {
-            return {fillColor: '#73004C', fillOpacity: '0.5', weight: 0};
+            return {color: '#73004C', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 3) {
-            return {fillColor: '#A80084', fillOpacity: '0.5', weight: 0};
+            return {color: '#A80084', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 2) {
-            return {fillColor: '#FF73DF', fillOpacity: '0.5', weight: 0};
+            return {color: '#FF73DF', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 1) {
-            return {fillColor: '#FFAA00', fillOpacity: '0.5', weight: 0};
+            return {color: '#FFAA00', fillOpacity: '0.5'};
         } else {
-            return {fillColor: '#FFFF00', fillOpacity: '0.5', weight: 0};
+            return {color: '#FFFF00', fillOpacity: '0.5'};
         }
     }});
 
@@ -391,9 +391,8 @@ var attributes = L.esri.query({
   attributes.params.returnDistinctValues = true;
 
   attributes.run(function (err, res, raw) {
-      for (i=1; i<res.features.length; i++){
-          console.log(res.features[i].properties.datefmt);
-      }
+    console.log(res.features)
+      
   });
 
 

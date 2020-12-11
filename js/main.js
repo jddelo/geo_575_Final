@@ -366,6 +366,24 @@ function getCircleValues(mymap, attribute){
 //    });
 //};
 
+
+var attributes = L.esri.query({
+    url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0"
+  });
+ 
+attributes.distinct('dddate').orderBy('modate', 'ASC').limit(20000);
+
+attributes.run(function(error, featureCollection, response){
+    if(error) {
+        console.log(error);
+        return;
+    }
+    console.log(featureCollection);
+})
+
+console.log(attributes);
+
+
 //function getData(mymap){
 //    //load the data
 //    $.ajax("data/CancerStats.geojson", {

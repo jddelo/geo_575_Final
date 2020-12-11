@@ -56,8 +56,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
         } else {
             return {fillColor: '#FFFF00', fillOpacity: '0.5'};
         }
-    } */
-    }),
+    }});
 
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
@@ -385,14 +384,7 @@ function getCircleValues(mymap, attribute){
 
 var attributes = L.esri.query({
     url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0"
-<<<<<<< HEAD
   });
-=======
-  })
-    .where("1=1")
-    .returnGeometry(false)
-    .fields(["ddate"])
->>>>>>> jdelo
  
 attributes.distinct('dddate').orderBy('modate', 'ASC').limit(20000);
 

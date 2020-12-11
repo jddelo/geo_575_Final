@@ -14,6 +14,10 @@ $(function () {
 
 });   
 
+var fireIcon = L.icon({
+    iconUrl: 'img/forest.png',
+    iconSize: [20,20]
+});
 
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
@@ -24,9 +28,11 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     
     fires = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
-    minZoom: 7, 
-    useCors: true
-    }),
+    pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {
+            icon: fireIcon
+        });
+    }}),
 
     drought = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
@@ -66,7 +72,7 @@ function createMap(){
     var mymap = L.map('mapid', {
         center: [39, -95],
         zoom: 4,
-        layers: [imagery, places, fires, drought, states]
+        layers: [imagery, places, fires, drought]
     });
     
 
@@ -138,6 +144,16 @@ function createSequenceControls(mymap){
             $(container).append('<button class="skip" id="reverse" title="Reverse">Reverse</button>');
             $(container).append('<button class="skip" id="forward" title="Forward">Skip</button>');
 
+            //kill any mouse event listeners on the map
+            $(container).on('mousedown dblclick', function(e){
+                L.DomEvent.stopPropagation(e);
+            });
+            $(container).mousedown(function () {
+                mymap.dragging.disable();
+            });
+            $(document).mouseup(function () {
+                mymap.dragging.enable();
+            });
             
             return container;
         }

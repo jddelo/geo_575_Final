@@ -19,7 +19,7 @@
 	<body>
 		<!--create information window for users giving map summary and data sources-->
 		<div id="infowindow" visibility: hidden title = "Map Information"><p><b><u>Wildfires and Drought, 1984-2018</u></b><br>
-			This map illustrates the effect of drought on the severity of wildfires from 1984-2018.<br><br>
+			This map illustrates the effect of drought on the severity of wildfires from 2000-2018.<br><br>
 			<b><u>How to use:</u></b><br><br>
 			Use the slider or direction arrows to toggle between years.  The legend will update the symbol size and mortalities for the year 
 			selected. You can toggle the basemap between aerial imagery and topographic, and also turn off the borders/places for more control using the icon in the upper-right portion of the map.
@@ -35,12 +35,20 @@
 		<button class = "info"><img src = 'img/info.png' ></button></p></div>
 		
 		<div id="mapid"></div>
+        
 		<!--links to javascript files, libraries and esri plugin-->
 		<script type="text/javascript" src ="lib/leaflet/leaflet.js"></script>
 		<script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
 		<script type="text/javascript" src= "lib/jquery-ui-1.12.1//jquery-ui.js"></script>
+<<<<<<< HEAD
 		<script src="https://unpkg.com/esri-leaflet@2.5.1/dist/esri-leaflet.js"></script>
 		<script src="https://unpkg.com/esri-leaflet-renderers@2.1.2"></script>
+=======
+		<script type="text/javascript" src="https://unpkg.com/esri-leaflet@2.5.1/dist/esri-leaflet.js"
+   			integrity="sha512-q7X96AASUF0hol5Ih7AeZpRF6smJS55lcvy+GLWzJfZN+31/BQ8cgNx2FGF+IQSA4z2jHwB20vml+drmooqzzQ=="
+			crossorigin=""></script>
+<!--		<script type="text/javascript" src="https://unpkg.com/esri-leaflet-renderers@2.1.2" crossorigin=""></script>-->
+>>>>>>> a3f0d19322228aac471a4f7133263af2e7e47429
 		<script type="text/javascript" src="js/main.js"></script>
 		
 

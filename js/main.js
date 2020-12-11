@@ -46,15 +46,15 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
    // ignoreRenderer: true,
     style: function (feature){
         if (feature.properties.DM === 4) {
-            return {fillColor: '#73004C', fillOpacity: '0.5'};
+            return {fillColor: '#73004C', fillOpacity: '0.5', stroke: 'none'};
         } else if (feature.properties.DM === 3) {
-            return {fillColor: '#A80084', fillOpacity: '0.5'};
+            return {fillColor: '#A80084', fillOpacity: '0.5', stroke: 'none'};
         } else if (feature.properties.DM === 2) {
-            return {fillColor: '#FF73DF', fillOpacity: '0.5'};
+            return {fillColor: '#FF73DF', fillOpacity: '0.5', stroke: 'none'};
         } else if (feature.properties.DM === 1) {
-            return {fillColor: '#FFAA00', fillOpacity: '0.5'};
+            return {fillColor: '#FFAA00', fillOpacity: '0.5', stroke: 'none'};
         } else {
-            return {fillColor: '#FFFF00', fillOpacity: '0.5'};
+            return {fillColor: '#FFFF00', fillOpacity: '0.5', stroke: 'none'};
         }
     }});
 

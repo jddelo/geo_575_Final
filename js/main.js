@@ -385,13 +385,11 @@ function getCircleValues(mymap, attribute){
 var attributes = L.esri.query({
     url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0"
   })
-    .where("1-1")
-    .returnGeometry(false)
-    .fields(['datefmt'])
-  attributes.params.returnDistinctValues = true;
+
+  attributes.distinct('datefmt');
 
   attributes.run(function (err, res, raw) {
-    console.log(res.features)
+    console.log(res.features);
       
   });
 

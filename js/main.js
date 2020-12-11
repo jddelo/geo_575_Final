@@ -44,17 +44,17 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     //from: new Date('01/01/2000'),
     //to: new Date('01/31/2000')
    // ignoreRenderer: true,
-    /*style: function (feature){
+    style: function (feature){
         if (feature.properties.DM === 4) {
             return {fillColor: '#73004C', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 3) {
             return {fillColor: '#A80084', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 2) {
-            return {fillColor: '#E69800', fillOpacity: '0.5'};
+            return {fillColor: '#FF73DF', fillOpacity: '0.5'};
         } else if (feature.properties.DM === 1) {
             return {fillColor: '#FFAA00', fillOpacity: '0.5'};
         } else {
-            return {fillColor: '#FFFFBE', fillOpacity: '0.5'};
+            return {fillColor: '#FFFF00', fillOpacity: '0.5'};
         }
     } */
     }),
@@ -385,7 +385,14 @@ function getCircleValues(mymap, attribute){
 
 var attributes = L.esri.query({
     url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0"
+<<<<<<< HEAD
   });
+=======
+  })
+    .where("1=1")
+    .returnGeometry(false)
+    .fields(["ddate"])
+>>>>>>> jdelo
  
 attributes.distinct('dddate').orderBy('modate', 'ASC').limit(20000);
 

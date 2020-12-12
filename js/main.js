@@ -189,8 +189,8 @@ function createSequenceControls(mymap){
     });
 
     $('.year').html('<option value="datefmt = \'2000-01\'">2000</option>' +
-                    '<option value="datefmt = \'2002-01\'">2002</option>' +
                     '<option value="datefmt = \'2001-01\'">2001</option>' +
+                    '<option value="datefmt = \'2002-01\'">2002</option>' +
                     '<option value="datefmt = \'2003-01\'">2003</option>' +
                     '<option value="datefmt = \'2004-01\'">2004</option>' +
                     '<option value="datefmt = \'2005-01\'">2005</option>' +

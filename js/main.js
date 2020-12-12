@@ -47,15 +47,15 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
    // ignoreRenderer: true,
     style: function (feature){
         if (feature.properties.DM === 4) {
-            return {color: '#73004C', fillOpacity: '0.5'};
+            return {color: '#73004C', opacity: '0.5', weight: 1};
         } else if (feature.properties.DM === 3) {
-            return {color: '#A80084', fillOpacity: '0.5'};
+            return {color: '#A80084', opacity: '0.5', weight: 1};
         } else if (feature.properties.DM === 2) {
-            return {color: '#FF73DF', fillOpacity: '0.5'};
+            return {color: '#FF73DF', opacity: '0.5', weight: 1};
         } else if (feature.properties.DM === 1) {
-            return {color: '#FFAA00', fillOpacity: '0.5'};
+            return {color: '#FFAA00', opacity: '0.5', weight: 1};
         } else {
-            return {color: '#FFFF00', fillOpacity: '0.5'};
+            return {color: '#FFFF00', opacity: '0.5', weight: 1};
         }
     }});
 
@@ -95,7 +95,25 @@ function createMap(){
     L.control.layers(baseMaps, overlayMaps).addTo(mymap);
 
     createSequenceControls(mymap);
+
+    var yearquery = document.getElementById('yearselect');
+
+    yearquery.addEventListener('change', function () {
+        drought.setWhere(yearquery.value);
+        fires.setWhere(yearquery.value);
+    });
+
+    var monthquery = document.getElementById('slider');
+    
+    monthquery.addEventListener('change', function () { 
+        console.log("event listener is listening");
+        drought.setWhere(function(){
+            var yr = yearquery.value;
+            console.log(yr);
+        });
+    });
 };
+
 
 
 //define popup object
@@ -140,7 +158,7 @@ function createSequenceControls(mymap){
         onAdd: function (mymap){
             //create new div for sequence controller & add all control buttons/slider
             var container = L.DomUtil.create('div', 'sequence-control-container');
-            $(container).append('<input class ="range-slider" type="range">');
+            $(container).append('<input class ="range-slider" id="slider" type="range">');
             $(container).append('<button class="skip" id="reverse" title="Reverse">Reverse</button>');
             $(container).append('<button class="skip" id="forward" title="Forward">Skip</button>');
             $(container).append('<select class="year" id="yearselect"></select>');
@@ -170,26 +188,25 @@ function createSequenceControls(mymap){
         step: 1
     });
 
-    $('.year').html('<option value="1=1">Any</option>' + 
-                    '<option value="datefmt like "2000%">2000</option>' +
-                    '<option value="datefmt like "2001%">2001</option>' +
-                    '<option value="datefmt like "2002%">2002</option>' +
-                    '<option value="datefmt like "2003%">2003</option>' +
-                    '<option value="datefmt like "2004%">2004</option>' +
-                    '<option value="datefmt like "2005%">2005</option>' +
-                    '<option value="datefmt like "2006%">2006</option>' +
-                    '<option value="datefmt like "2007%">2007</option>' +
-                    '<option value="datefmt like "2008%">2008</option>' +
-                    '<option value="datefmt like "2009%">2009</option>' +
-                    '<option value="datefmt like "2010%">2010</option>' +
-                    '<option value="datefmt like "2011%">2011</option>' +
-                    '<option value="datefmt like "2012%">2012</option>' +
-                    '<option value="datefmt like "2013%">2013</option>' +
-                    '<option value="datefmt like "2014%">2014</option>' +
-                    '<option value="datefmt like "2015%">2015</option>' +
-                    '<option value="datefmt like "2016%">2016</option>' +
-                    '<option value="datefmt like "2017%">2017</option>' +
-                    '<option value="datefmt like "2018%">2018</option>')
+    $('.year').html('<option value="datefmt = \'2000-01\'">2000</option>' +
+                    '<option value="datefmt = \'2002-01\'">2002</option>' +
+                    '<option value="datefmt = \'2001-01\'">2001</option>' +
+                    '<option value="datefmt = \'2003-01\'">2003</option>' +
+                    '<option value="datefmt = \'2004-01\'">2004</option>' +
+                    '<option value="datefmt = \'2005-01\'">2005</option>' +
+                    '<option value="datefmt = \'2006-01\'">2006</option>' +
+                    '<option value="datefmt = \'2007-01\'">2007</option>' +
+                    '<option value="datefmt = \'2008-01\'">2008</option>' +
+                    '<option value="datefmt = \'2009-01\'">2009</option>' +
+                    '<option value="datefmt = \'2010-01\'">2010</option>' +
+                    '<option value="datefmt = \'2011-01\'">2011</option>' +
+                    '<option value="datefmt = \'2012-01\'">2012</option>' +
+                    '<option value="datefmt = \'2013-01\'">2013</option>' +
+                    '<option value="datefmt = \'2014-01\'">2014</option>' +
+                    '<option value="datefmt = \'2015-01\'">2015</option>' +
+                    '<option value="datefmt = \'2016-01\'">2016</option>' +
+                    '<option value="datefmt = \'2017-01\'">2017</option>' +
+                    '<option value="datefmt = \'2018-01\'">2018</option>')
     //add arrow images to the skip buttons
     $('#reverse').html('<img src = "img/back.png">');
     $('#forward').html('<img src = "img/forward.png">');
@@ -203,16 +220,16 @@ function createSequenceControls(mymap){
         //toggle to next year if forward is pressed unless it goes outside of value range
         if ($(this).attr('id') == 'forward'){
             index++;
-            index = index > 9 ? 0 : index;
+            index = index > 11 ? 0 : index;
 
         //toggle to last year if reverse is pressed unless it goes outside of value range
         } else if ($(this).attr('id') == 'reverse'){
             index--;
-            index = index < 0 ? 9 : index;
+            index = index < 0 ? 11 : index;
         };
 
         //update proportional symbols after new year is selected
-        updatePropSymbols(mymap, attributes[index]);
+        //updatePropSymbols(mymap, attributes[index]);
 
         
         //update the range slider to coincide with button pushes
@@ -225,9 +242,11 @@ function createSequenceControls(mymap){
         var index = $(this).val();
 
     //update proportional symbols based on changes to slider
-    updatePropSymbols(mymap, attributes[index]);
+    //updatePropSymbols(mymap, attributes[index]);
     });
 };
+
+
 
 //create point layer from geojson layer
 function pointToLayer(feature, latlng, attributes){
@@ -459,16 +478,6 @@ d3.csv("data/Drought_Data_by_State_Year.csv",
 //};
 
 
-var attributes = L.esri.query({
-    url: "https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0"
-  })
-
-  attributes.distinct('datefmt');
-
-  attributes.run(function (err, res, raw) {
-    console.log(res.features);
-      
-  });
 
 
 //function getData(mymap){

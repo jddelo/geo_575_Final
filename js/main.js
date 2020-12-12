@@ -28,6 +28,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     
     fires = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
+    where: "datefmt = '2000-01'",
     pointToLayer: function(feature, latlng) {
         return L.marker(latlng, {
             icon: fireIcon
@@ -142,6 +143,7 @@ function createSequenceControls(mymap){
             $(container).append('<input class ="range-slider" type="range">');
             $(container).append('<button class="skip" id="reverse" title="Reverse">Reverse</button>');
             $(container).append('<button class="skip" id="forward" title="Forward">Skip</button>');
+            $(container).append('<select class="year" id="yearselect"></select>');
 
             //kill any mouse event listeners on the map
             $(container).on('mousedown dblclick', function(e){
@@ -162,12 +164,32 @@ function createSequenceControls(mymap){
 
     //set properties for range slider
     $('.range-slider').attr({
-        max: 227,
+        max: 11,
         min: 0,
         value: 0,
         step: 1
     });
 
+    $('.year').html('<option value="1=1">Any</option>' + 
+                    '<option value="datefmt like "2000%">2000</option>' +
+                    '<option value="datefmt like "2001%">2001</option>' +
+                    '<option value="datefmt like "2002%">2002</option>' +
+                    '<option value="datefmt like "2003%">2003</option>' +
+                    '<option value="datefmt like "2004%">2004</option>' +
+                    '<option value="datefmt like "2005%">2005</option>' +
+                    '<option value="datefmt like "2006%">2006</option>' +
+                    '<option value="datefmt like "2007%">2007</option>' +
+                    '<option value="datefmt like "2008%">2008</option>' +
+                    '<option value="datefmt like "2009%">2009</option>' +
+                    '<option value="datefmt like "2010%">2010</option>' +
+                    '<option value="datefmt like "2011%">2011</option>' +
+                    '<option value="datefmt like "2012%">2012</option>' +
+                    '<option value="datefmt like "2013%">2013</option>' +
+                    '<option value="datefmt like "2014%">2014</option>' +
+                    '<option value="datefmt like "2015%">2015</option>' +
+                    '<option value="datefmt like "2016%">2016</option>' +
+                    '<option value="datefmt like "2017%">2017</option>' +
+                    '<option value="datefmt like "2018%">2018</option>')
     //add arrow images to the skip buttons
     $('#reverse').html('<img src = "img/back.png">');
     $('#forward').html('<img src = "img/forward.png">');

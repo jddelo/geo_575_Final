@@ -291,15 +291,17 @@ function createSequenceControls(mymap){
 function updateMonth(rangeindex) {
     var ds = document.getElementById('dateshown');
 
-    curDate = ds.innerHTML
-    console.log("ds= " + ds)
-    if (rangeindex > 9){
-        var newDate = curDate.slice(1,5) + "-0" + toString(rangeindex + 1);
+    curDate = ds.innerHTML;
+    console.log("ds= " + curDate);
+    console.log(typeof curDate);
+    if (rangeindex < 9){
+        var newDate = curDate.slice(0,4) + "-0" + (rangeindex + 1).toString();
     } else {
-        var newDate = curDate.slice(1,5) + "-" + toString(rangeindex + 1);
+        var newDate = curDate.slice(0,4) + "-" + (rangeindex + 1).toString();
     }
-    
+    console.log("newDate- " + newDate);
     var newQuery = "datefmt = '" + newDate + "'";
+    console.log("newQuery- " + newQuery)
     drought.setWhere(newQuery);
     fires.setWhere(newQuery);
     $('#dateshown').html(newDate);

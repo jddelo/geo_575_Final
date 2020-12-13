@@ -75,7 +75,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
     //simplifyFactor: 0.35,
     useCors: true,
-    where: "datemft = '2000-01'",
+    where: "datefmt = '2000-01'",
     //timeField: 'modate',
     //precision: 5,
     //from: new Date('01/01/2000'),
@@ -83,15 +83,15 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     //ignoreRenderer: true,
     style: function (feature){
         if (feature.properties.DM === 4) {
-            return {color: '#73004C', opacity: '0.5', weight: 1};
+            return {color: '#73004C', fillOpacity: '0.7', opacity: '0.5', weight: 1};
         } else if (feature.properties.DM === 3) {
-            return {color: '#A80084', opacity: '0.5', weight: 1};
+            return {color: '#A80084',  fillOpacity: '0.65',opacity: '0.5', weight: 1};
         } else if (feature.properties.DM === 2) {
-            return {color: '#FF73DF', opacity: '0.5', weight: 1};
+            return {color: '#FF73DF',  fillOpacity: '0.55',opacity: '0.5', weight: 1};
         } else if (feature.properties.DM === 1) {
-            return {color: '#FFAA00', opacity: '0.5', weight: 1};
+            return {color: '#FFAA00',  fillOpacity: '0.5', opacity: '0.5', weight: 1};
         } else {
-            return {color: '#FFFF00', opacity: '0.5', weight: 1};
+            return {color: '#FFFF00',  fillOpacity: '0.4',opacity: '0.5', weight: 1};
         }
     }});
 
@@ -137,10 +137,11 @@ function createMap(){
 
     createSequenceControls(mymap);
 
-    var yearquery = document.getElementById('yearselect');
+    /*var yearquery = document.getElementById('yearselect');
 
     yearquery.addEventListener('change', function () {
-        console.log("yearquery value =" + yearquery.value)
+        console.log("yearquery value =" + yearquery.value);
+        console.log("type of yearquery: " + typeof yearquery.value);
         drought.setWhere(yearquery.value);
         fires.setWhere(yearquery.value);
         var nd = yearquery.value;
@@ -148,6 +149,12 @@ function createMap(){
         console.log( nd2);
         $('#dateshown').html(nd2);
 
+    }); */
+
+    var yearquery = document.getElementById('yearselect');
+
+    yearquery.addEventListener('change', function () {
+        updateYear();
     });
 };
 
@@ -308,9 +315,8 @@ function createSequenceControls(mymap){
 };
 
 function updateMonth(rangeindex) {
-    var ds = document.getElementById('dateshown');
+    var curDate = document.getElementById('dateshown').innerHTML;
 
-    curDate = ds.innerHTML;
     console.log("ds= " + curDate);
     console.log(typeof curDate);
     if (rangeindex < 9){
@@ -327,23 +333,15 @@ function updateMonth(rangeindex) {
     
 };
 
-function updateYear(rangeindex) {
-    var ds = document.getElementById('dateshown');
-
-    curDate = ds.innerHTML;
-
-    if (rangeindex < 9){
-        var newDate = curDate.slice(0,4) + "-0" + (rangeindex + 1).toString();
-    } else {
-        var newDate = curDate.slice(0,4) + "-" + (rangeindex + 1).toString();
-    }
-    console.log("newDate- " + newDate);
-    var newQuery = "datefmt = '" + newDate + "'";
-    console.log("newQuery- " + newQuery)
-    drought.setWhere(newQuery);
-    fires.setWhere(newQuery);
-    $('#dateshown').html(newDate);
-    
+function updateYear() {
+    var curDate = document.getElementById('dateshown').innerHTML;
+        dateParts = curDate.split("-", 2);
+        newYear = document.getElementById('yearselect').value;
+        newDate = newYear + "-" + dateParts[1];
+        newQuery = "datefmt = '" + newDate + "'";
+        drought.setWhere(newQuery);
+        fires.setWhere(newQuery);
+        $('#dateshown').html(newDate);    
 };
 
 

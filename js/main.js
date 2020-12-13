@@ -140,6 +140,7 @@ function createMap(){
     var yearquery = document.getElementById('yearselect');
 
     yearquery.addEventListener('change', function () {
+        console.log("yearquery value =" + yearquery.value)
         drought.setWhere(yearquery.value);
         fires.setWhere(yearquery.value);
         var nd = yearquery.value;
@@ -225,8 +226,7 @@ function createSequenceControls(mymap){
         value: 0,
         step: 1
     });
-
-    $('.year').html('<option value="datefmt = \'2000-01\'">2000</option>' +
+    /*$('.year').html('<option value="datefmt = \'2000-01\'">2000</option>' +
                     '<option value="datefmt = \'2001-01\'">2001</option>' +
                     '<option value="datefmt = \'2002-01\'">2002</option>' +
                     '<option value="datefmt = \'2003-01\'">2003</option>' +
@@ -244,7 +244,26 @@ function createSequenceControls(mymap){
                     '<option value="datefmt = \'2015-01\'">2015</option>' +
                     '<option value="datefmt = \'2016-01\'">2016</option>' +
                     '<option value="datefmt = \'2017-01\'">2017</option>' +
-                    '<option value="datefmt = \'2018-01\'">2018</option>')
+                    '<option value="datefmt = \'2018-01\'">2018</option>')  */
+    $('.year').html('<option value="2000">2000</option>' +
+                    '<option value="2001">2001</option>' +
+                    '<option value="2002">2002</option>' +
+                    '<option value="2003">2003</option>' +
+                    '<option value="2004">2004</option>' +
+                    '<option value="2005">2005</option>' +
+                    '<option value="2006">2006</option>' +
+                    '<option value="2007">2007</option>' +
+                    '<option value="2008">2008</option>' +
+                    '<option value="2009">2009</option>' +
+                    '<option value="2010">2010</option>' +
+                    '<option value="2011">2011</option>' +
+                    '<option value="2012">2012</option>' +
+                    '<option value="2013">2013</option>' +
+                    '<option value="2014">2014</option>' +
+                    '<option value="2015">2015</option>' +
+                    '<option value="2016">2016</option>' +
+                    '<option value="2017">2017</option>' +
+                    '<option value="2018">2018</option>')
     //add arrow images to the skip buttons
     $('#reverse').html('<img src = "img/back.png">');
     $('#forward').html('<img src = "img/forward.png">');
@@ -308,7 +327,24 @@ function updateMonth(rangeindex) {
     
 };
 
+function updateYear(rangeindex) {
+    var ds = document.getElementById('dateshown');
 
+    curDate = ds.innerHTML;
+
+    if (rangeindex < 9){
+        var newDate = curDate.slice(0,4) + "-0" + (rangeindex + 1).toString();
+    } else {
+        var newDate = curDate.slice(0,4) + "-" + (rangeindex + 1).toString();
+    }
+    console.log("newDate- " + newDate);
+    var newQuery = "datefmt = '" + newDate + "'";
+    console.log("newQuery- " + newQuery)
+    drought.setWhere(newQuery);
+    fires.setWhere(newQuery);
+    $('#dateshown').html(newDate);
+    
+};
 
 
 

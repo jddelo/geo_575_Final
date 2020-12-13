@@ -36,17 +36,25 @@
 		<button class = "info"><img src = 'img/info.png' ></button></p></div>
 		
 		<div id="mapid"></div>
-        
-		<!--links to javascript files, libraries and esri plugin-->
-		<script type="text/javascript" src ="lib/leaflet/leaflet.js"></script>
-		<script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
-		<script type="text/javascript" src= "lib/jquery-ui-1.12.1//jquery-ui.js"></script>
-		<script type="text/javascript" src="https://unpkg.com/esri-leaflet@2.5.1/dist/esri-leaflet.js"
-   			integrity="sha512-q7X96AASUF0hol5Ih7AeZpRF6smJS55lcvy+GLWzJfZN+31/BQ8cgNx2FGF+IQSA4z2jHwB20vml+drmooqzzQ=="
-			crossorigin=""></script>
-<!--		<script type="text/javascript" src="https://unpkg.com/esri-leaflet-renderers@2.1.2" crossorigin=""></script>-->
-		<script type="text/javascript" src="js/main.js"></script>
 		
+       <!-- Create a div where the graph will take place -->
+	   <div id="my_dataviz"></div>
 
-	</body>
+	   <!--links to javascript files, libraries and esri plugin-->
+	   <script type="text/javascript" src="lib/d3.v4.js"></script>
+	   <script type="text/javascript" src="lib/d3-selection.v1.js"></script> 
+	   <script type="text/javascript" src ="lib/leaflet/leaflet.js"></script>
+	   <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
+	   <script type="text/javascript" src= "lib/jquery-ui-1.12.1//jquery-ui.js"></script>
+
+	   <script src="https://unpkg.com/esri-leaflet@2.5.1/dist/esri-leaflet.js"></script>
+<!--		<script src="https://unpkg.com/esri-leaflet-renderers@2.1.2"></script>-->
+=======
+	   <script type="text/javascript" src="https://unpkg.com/esri-leaflet@2.5.1/dist/esri-leaflet.js"
+			  integrity="sha512-q7X96AASUF0hol5Ih7AeZpRF6smJS55lcvy+GLWzJfZN+31/BQ8cgNx2FGF+IQSA4z2jHwB20vml+drmooqzzQ=="
+		   crossorigin=""></script>
+<!--		<script type="text/javascript" src="https://unpkg.com/esri-leaflet-renderers@2.1.2" crossorigin=""></script>-->
+	   <script type="text/javascript" src="js/main.js"></script>
+	   
+   </body>
 </html>

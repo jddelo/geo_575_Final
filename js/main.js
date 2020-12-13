@@ -142,16 +142,11 @@ function createMap(){
     yearquery.addEventListener('change', function () {
         drought.setWhere(yearquery.value);
         fires.setWhere(yearquery.value);
-    });
+        var nd = yearquery.value;
+        var nd2 = nd.slice(-8, -1);
+        console.log( nd2);
+        $('#dateshown').html(nd2);
 
-    var monthquery = document.getElementById('slider');
-    
-    monthquery.addEventListener('change', function () { 
-        console.log("event listener is listening");
-        drought.setWhere(function(){
-            var yr = yearquery.value;
-            console.log(yr);
-        });
     });
 };
 
@@ -199,10 +194,12 @@ function createSequenceControls(mymap){
         onAdd: function (mymap){
             //create new div for sequence controller & add all control buttons/slider
             var container = L.DomUtil.create('div', 'sequence-control-container');
+            $(container).append('<p class = "curDate" id = "dateshown"></p>');
+            $(container).append('<select class="year" id="yearselect"></select>');
             $(container).append('<input class ="range-slider" id="slider" type="range">');
             $(container).append('<button class="skip" id="reverse" title="Reverse">Reverse</button>');
             $(container).append('<button class="skip" id="forward" title="Forward">Skip</button>');
-            $(container).append('<select class="year" id="yearselect"></select>');
+
 
             //kill any mouse event listeners on the map
             $(container).on('mousedown dblclick', function(e){
@@ -251,6 +248,7 @@ function createSequenceControls(mymap){
     //add arrow images to the skip buttons
     $('#reverse').html('<img src = "img/back.png">');
     $('#forward').html('<img src = "img/forward.png">');
+    $('#dateshown').html('2000-01')
 
     //create logic for function controls
     $('.skip').click(function(){
@@ -264,13 +262,15 @@ function createSequenceControls(mymap){
             index = index > 11 ? 0 : index;
 
         //toggle to last year if reverse is pressed unless it goes outside of value range
-        } else if ($(this).attr('id') == 'reverse'){
+        } else {
+            ($(this).attr('id') == 'reverse')
             index--;
             index = index < 0 ? 11 : index;
         };
 
         //update proportional symbols after new year is selected
         //updatePropSymbols(mymap, attributes[index]);
+        updateMonth(index);
 
         
         //update the range slider to coincide with button pushes
@@ -284,8 +284,30 @@ function createSequenceControls(mymap){
 
     //update proportional symbols based on changes to slider
     //updatePropSymbols(mymap, attributes[index]);
+    updateMonth(index);
     });
 };
+
+function updateMonth(rangeindex) {
+    var ds = document.getElementById('dateshown');
+
+    curDate = ds.innerHTML
+    console.log("ds= " + ds)
+    if (rangeindex > 9){
+        var newDate = curDate.slice(1,5) + "-0" + toString(rangeindex + 1);
+    } else {
+        var newDate = curDate.slice(1,5) + "-" + toString(rangeindex + 1);
+    }
+    
+    var newQuery = "datefmt = '" + newDate + "'";
+    drought.setWhere(newQuery);
+    fires.setWhere(newQuery);
+    $('#dateshown').html(newDate);
+    
+};
+
+
+
 
 
 

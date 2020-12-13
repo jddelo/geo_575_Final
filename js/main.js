@@ -45,16 +45,16 @@ function iconByAcres(feature){
     
   var icon;
     
-  if (feature.properties.BurnBndAc >= 1 && feature.properties.BurnBndAc < 999) icon = fireIcon1;
-    else if (feature.properties.BurnBndAc >= 1000 && feature.properties.BurnBndAc < 4999) icon = fireIcon2;
-    else if (feature.properties.BurnBndAc >= 5000 && feature.properties.BurnBndAc < 49999) icon = fireIcon3;
-    else if (feature.properties.BurnBndAc >= 50000 && feature.properties.BurnBndAc < 99999) icon = fireIcon4;
+  if (feature.properties.BurnBndAc >= 1 && feature.properties.BurnBndAc < 1000) icon = fireIcon1;
+    else if (feature.properties.BurnBndAc >= 1000 && feature.properties.BurnBndAc < 5000) icon = fireIcon2;
+    else if (feature.properties.BurnBndAc >= 5000 && feature.properties.BurnBndAc < 50000) icon = fireIcon3;
+    else if (feature.properties.BurnBndAc >= 50000 && feature.properties.BurnBndAc < 100000) icon = fireIcon4;
   else icon = fireIcon5;
 
   return icon;
 };
 
-
+//Load basemaps
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
     gray = L.esri.basemapLayer('DarkGray'),
@@ -62,7 +62,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     places = L.esri.tiledMapLayer({
     url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'}),
     
-    //function to retrieve the fire data, style it based on acres burned, and symbolize with custom icon
+    //Add the fire data, style it based on acres burned, and symbolize with custom icon
     fires = L.esri.featureLayer({
         url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
         where: "datefmt = '2000-01'",
@@ -70,7 +70,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     }),
     
     
-    //Function to retrieve and symbolize the drought data
+    //Add and symbolize the drought data
     drought = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
     //simplifyFactor: 0.35,
@@ -93,20 +93,29 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
         } else {
             return {color: '#ff0',  fillOpacity: '0.4',opacity: '0.5', weight: 1};
         }
-    }});
+    }}),
 
+    //Add state data
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer/0',
     useCors: true,
-
     style: {fillColor: 'none', weight:1.5, color:'#8c8c8c'}
     });
+
 
     //Create pop up for fires
     fires.bindPopup(function (layer){
         return L.Util.template('<p>{BurnBndAc} Acres Burned in {datefmt}</p>', layer.feature.properties);
-
     });
+    fires.on('mouseover', function () {
+        this.openPopup();
+    });
+    fires.on('mouseout', function () {
+        this.closePopup();
+    });
+
+
+
 
 
 //create map

@@ -54,9 +54,9 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     }),
 
     states = L.esri.featureLayer({
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
+    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer/0',
     useCors: true,
-    style: {fillColor: 'none'}
+    style: {fillColor: 'none', weight:1.5, color:'#8c8c8c'}
     });
 
 

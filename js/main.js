@@ -96,14 +96,16 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     }});
 
     states = L.esri.featureLayer({
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
+    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer/0',
     useCors: true,
-    style: {fillColor: 'none', stroke: 'none'}
+
+    style: {fillColor: 'none', weight:1.5, color:'#8c8c8c'}
     });
 
     //Create pop up for fires
     fires.bindPopup(function (layer){
         return L.Util.template('<p>{BurnBndAc} Acres Burned in {datefmt}</p>', layer.feature.properties);
+
     });
 
 

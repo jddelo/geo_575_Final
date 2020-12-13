@@ -14,10 +14,46 @@ $(function () {
 
 });   
 
-var fireIcon = L.icon({
+//Define the fire marker icons
+var fireIcon1 = L.icon({
     iconUrl: 'img/forest.png',
-    iconSize: [20,20]
+    iconSize: [10,10]
 });
+
+var fireIcon2 = L.icon({
+    iconUrl: 'img/forest.png',
+    iconSize: [25,25]
+});
+
+var fireIcon3 = L.icon({
+    iconUrl: 'img/forest.png',
+    iconSize: [40,40]
+});
+
+var fireIcon4 = L.icon({
+    iconUrl: 'img/forest.png',
+    iconSize: [55,55]
+});
+
+var fireIcon5 = L.icon({
+    iconUrl: 'img/forest.png',
+    iconSize: [90,90]
+});
+
+//Function to select icon size based on fire size
+function iconByAcres(feature){
+    
+  var icon;
+    
+  if (feature.properties.BurnBndAc >= 499 && feature.properties.BurnBndAc < 1335) icon = fireIcon1;
+    else if (feature.properties.BurnBndAc >= 1336 && feature.properties.BurnBndAc < 80383) icon = fireIcon2;
+    else if (feature.properties.BurnBndAc >= 80384 && feature.properties.BurnBndAc < 190655) icon = fireIcon3;
+    else if (feature.properties.BurnBndAc >= 190656 && feature.properties.BurnBndAc < 353548) icon = fireIcon4;
+  else icon = fireIcon5;
+
+  return icon;
+};
+
 
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
@@ -26,15 +62,15 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     places = L.esri.tiledMapLayer({
     url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'}),
     
+    //function to retrieve the fire data, style it based on acres burned, and symbolize with custom icon
     fires = L.esri.featureLayer({
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
-    where: "datefmt = '2000-01'",
-    pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {
-            icon: fireIcon
-        });
-    }}),
-
+        url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
+        where: "datefmt = '2000-01'",
+        pointToLayer: function(feature, latlng) {return L.marker(latlng, {icon: iconByAcres(feature)})},
+    }),
+    
+    
+    //Function to retrieve and symbolize the drought data
     drought = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
     //simplifyFactor: 0.35,
@@ -44,7 +80,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     //precision: 5,
     //from: new Date('01/01/2000'),
     //to: new Date('01/31/2000')
-   // ignoreRenderer: true,
+    //ignoreRenderer: true,
     style: function (feature){
         if (feature.properties.DM === 4) {
             return {color: '#73004C', opacity: '0.5', weight: 1};
@@ -63,6 +99,11 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer',
     useCors: true,
     style: {fillColor: 'none', stroke: 'none'}
+    });
+
+    //Create pop up for fires
+    fires.bindPopup(function (layer){
+        return L.Util.template('<p>{BurnBndAc} Acres Burned in {datefmt}</p>', layer.feature.properties);
     });
 
 
@@ -462,38 +503,6 @@ d3.csv("data/Drought_Data_by_State_Year.csv",
         )
 
 })
-
-
-//use ajax to get geojson data, pass the response data into the functions
-//function getData(map){
-//    //load the data
-//    $.ajax("data/1999-2019_V3.geojson", {
-//        dataType: "json",
-//        success: function(response){
-//
-//            //create a Leaflet GeoJSON layer and add it to the map
-//            L.geoJson(response).addTo(map);
-//        }
-//    });
-//};
-
-
-
-
-//function getData(mymap){
-//    //load the data
-//    $.ajax("data/CancerStats.geojson", {
-//        dataType: "json",
-//        success: function(response){
-//            var attributes = processData(response);
-//            createPropSymbols(response,mymap, attributes);
-//            createSequenceControls(mymap, attributes);
-//            createLegend(mymap, attributes);
-//            
-//        }
-//    });
-//};
-
 
 //create the map when the dom is ready
 $(document).ready(createMap);

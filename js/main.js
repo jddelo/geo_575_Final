@@ -45,10 +45,10 @@ function iconByAcres(feature){
     
   var icon;
     
-  if (feature.properties.BurnBndAc >= 499 && feature.properties.BurnBndAc < 1335) icon = fireIcon1;
-    else if (feature.properties.BurnBndAc >= 1336 && feature.properties.BurnBndAc < 80383) icon = fireIcon2;
-    else if (feature.properties.BurnBndAc >= 80384 && feature.properties.BurnBndAc < 190655) icon = fireIcon3;
-    else if (feature.properties.BurnBndAc >= 190656 && feature.properties.BurnBndAc < 353548) icon = fireIcon4;
+  if (feature.properties.BurnBndAc >= 1 && feature.properties.BurnBndAc < 999) icon = fireIcon1;
+    else if (feature.properties.BurnBndAc >= 1000 && feature.properties.BurnBndAc < 4999) icon = fireIcon2;
+    else if (feature.properties.BurnBndAc >= 5000 && feature.properties.BurnBndAc < 49999) icon = fireIcon3;
+    else if (feature.properties.BurnBndAc >= 50000 && feature.properties.BurnBndAc < 99999) icon = fireIcon4;
   else icon = fireIcon5;
 
   return icon;

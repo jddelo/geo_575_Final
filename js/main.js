@@ -98,7 +98,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer/0',
     useCors: true,
-    simplifyFactor: 0.35,
+    simplifyFactor: 0.5,
     precision: 5,
     onEachFeature: onEachFeature,
     pane: 'statespane',

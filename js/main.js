@@ -40,8 +40,6 @@ var fireIcon5 = L.icon({
     iconSize: [90,90]
 });
 
-//function to turn places off when Topo is selected
-
 
 //Function to select icon size based on fire size
 function iconByAcres(feature){
@@ -63,7 +61,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     gray = L.esri.basemapLayer('DarkGray'),
     
     places = L.esri.tiledMapLayer({
-    url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'}),
+        url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'}),
     
     //Add the fire data, style it based on acres burned, and symbolize with custom icon
     fires = L.esri.featureLayer({
@@ -75,34 +73,36 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     
     //Add and symbolize the drought data
     drought = L.esri.featureLayer({
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
-    //simplifyFactor: 0.35,
-    useCors: true,
-    where: "datefmt = '2000-01'",
-    //timeField: 'modate',
-    //precision: 5,
-    //from: new Date('01/01/2000'),
-    //to: new Date('01/31/2000')
-    //ignoreRenderer: true,
-    style: function (feature){
-        if (feature.properties.DM === 4) {
-            return {color: '#730000', fillOpacity: '0.7', opacity: '0.5', weight: 1};
-        } else if (feature.properties.DM === 3) {
-            return {color: '#e60000',  fillOpacity: '0.65',opacity: '0.5', weight: 1};
-        } else if (feature.properties.DM === 2) {
-            return {color: '#fa0',  fillOpacity: '0.55',opacity: '0.5', weight: 1};
-        } else if (feature.properties.DM === 1) {
-            return {color: '#fcd37f',  fillOpacity: '0.5', opacity: '0.5', weight: 1};
-        } else {
-            return {color: '#ff0',  fillOpacity: '0.4',opacity: '0.5', weight: 1};
-        }
-    }}),
+        url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/Drought_Data_2000_2019/FeatureServer/0',
+       //simplifyFactor: 0.35,
+        useCors: true,
+        where: "datefmt = '2000-01'",
 
+        style: function (feature){
+            if (feature.properties.DM === 4) {
+                return {color: '#730000', fillOpacity: '0.7', opacity: '0.5', weight: 1};
+            } else if (feature.properties.DM === 3) {
+                return {color: '#e60000',  fillOpacity: '0.65',opacity: '0.5', weight: 1};
+            } else if (feature.properties.DM === 2) {
+                return {color: '#fa0',  fillOpacity: '0.65',opacity: '0.5', weight: 1};
+            } else if (feature.properties.DM === 1) {
+                return {color: '#fcd37f',  fillOpacity: '0.65', opacity: '0.5', weight: 1};
+            } else {
+                return {color: '#ff0',  fillOpacity: '0.5',opacity: '0.5', weight: 1};
+            }
+        }
+    });
+    
+    
     //Add state data
     states = L.esri.featureLayer({
     url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer/0',
     useCors: true,
-    style: {fillColor: 'none', weight:1.5, color:'#8c8c8c'}
+    simplifyFactor: 0.35,
+    precision: 5,
+    onEachFeature: onEachFeature,
+    pane: 'statespane',
+    style: {fillOpacity: 0, weight:1.5, color:'#8c8c8c'}
     });
 
 
@@ -146,64 +146,24 @@ function createMap(){
         "Drought": drought
     }
 
+    //create a pane to put states on top
+    mymap.createPane('statespane');
+
+    
+    //add layers & layer control to map
     L.control.layers(baseMaps, overlayMaps).addTo(mymap);
 
+    //run the create sequence control function
     createSequenceControls(mymap);
 
-    /*var yearquery = document.getElementById('yearselect');
-
-    yearquery.addEventListener('change', function () {
-        console.log("yearquery value =" + yearquery.value);
-        console.log("type of yearquery: " + typeof yearquery.value);
-        drought.setWhere(yearquery.value);
-        fires.setWhere(yearquery.value);
-        var nd = yearquery.value;
-        var nd2 = nd.slice(-8, -1);
-        console.log( nd2);
-        $('#dateshown').html(nd2);
-
-    }); */
-
+    //add event listener for year query change and call updateYear function
     var yearquery = document.getElementById('yearselect');
-
     yearquery.addEventListener('change', function () {
         updateYear();
     });
 };
 
 
-
-//define popup object
-function Popup(properties, attribute, layer, radius){
-    this.properties = properties;
-    this.layer = layer; 
-    this.year = attribute;
-    this.mortalities = this.properties[attribute];
-    this.content = "<p><b>State:</b> " + this.properties.State + "</p><p><b>Cancer Mortalities in " + this.year + ":</b> " + this.mortalities + "</p>";
-    this.bindToLayer = function(){
-        this.layer.bindPopup(this.content, {
-            offset: new L.Point(0, -radius)
-        });
-    };
-};
-
-//define update proportional symbols function 
-function updatePropSymbols(mymap,attribute){
-    mymap.eachLayer(function(layer){
-        if (layer.feature && layer.feature.properties[attribute]){
-            var props = layer.feature.properties;
-            //calculate radius based on value from currently selected year
-            var radius = calcPropRadius(props[attribute]);
-            layer.setRadius(radius);
-            //create new popups based on new values
-            var popup = new Popup(props, attribute, layer, radius);
-            popup.bindToLayer();
-            
-            //run update legend function after symbols are updated
-            updateLegend(mymap, attribute);
-        };
-    });
-};
 
 //create sequence controls for map data
 function createSequenceControls(mymap){
@@ -213,7 +173,7 @@ function createSequenceControls(mymap){
             position: 'bottomright'
         },
         onAdd: function (mymap){
-            //create new div for sequence controller & add all control buttons/slider
+            //create new div for sequence controller & add all control buttons/slider/year query selector & current displayed value text
             var container = L.DomUtil.create('div', 'sequence-control-container');
             $(container).append('<p class = "curDate" id = "dateshown"></p>');
             $(container).append('<select class="year" id="yearselect"></select>');
@@ -246,25 +206,7 @@ function createSequenceControls(mymap){
         value: 1,
         step: 1
     });
-    /*$('.year').html('<option value="datefmt = \'2000-01\'">2000</option>' +
-                    '<option value="datefmt = \'2001-01\'">2001</option>' +
-                    '<option value="datefmt = \'2002-01\'">2002</option>' +
-                    '<option value="datefmt = \'2003-01\'">2003</option>' +
-                    '<option value="datefmt = \'2004-01\'">2004</option>' +
-                    '<option value="datefmt = \'2005-01\'">2005</option>' +
-                    '<option value="datefmt = \'2006-01\'">2006</option>' +
-                    '<option value="datefmt = \'2007-01\'">2007</option>' +
-                    '<option value="datefmt = \'2008-01\'">2008</option>' +
-                    '<option value="datefmt = \'2009-01\'">2009</option>' +
-                    '<option value="datefmt = \'2010-01\'">2010</option>' +
-                    '<option value="datefmt = \'2011-01\'">2011</option>' +
-                    '<option value="datefmt = \'2012-01\'">2012</option>' +
-                    '<option value="datefmt = \'2013-01\'">2013</option>' +
-                    '<option value="datefmt = \'2014-01\'">2014</option>' +
-                    '<option value="datefmt = \'2015-01\'">2015</option>' +
-                    '<option value="datefmt = \'2016-01\'">2016</option>' +
-                    '<option value="datefmt = \'2017-01\'">2017</option>' +
-                    '<option value="datefmt = \'2018-01\'">2018</option>')  */
+    // set the properties for the year selector
     $('.year').html('<option value="2000">2000</option>' +
                     '<option value="2001">2001</option>' +
                     '<option value="2002">2002</option>' +
@@ -287,6 +229,7 @@ function createSequenceControls(mymap){
     //add arrow images to the skip buttons
     $('#reverse').html('<img src = "img/back.png">');
     $('#forward').html('<img src = "img/forward.png">');
+    //add default value for current display date
     $('#dateshown').html('2000-01')
 
     //create logic for function controls
@@ -295,20 +238,19 @@ function createSequenceControls(mymap){
         //get index value from slider
         var index = $('.range-slider').val();
 
-        //toggle to next year if forward is pressed unless it goes outside of value range
+        //toggle to next month if forward is pressed unless it goes outside of value range
         if ($(this).attr('id') == 'forward'){
             index++;
             index = index > 12 ? 1 : index;
 
-        //toggle to last year if reverse is pressed unless it goes outside of value range
+        //toggle to last month if reverse is pressed unless it goes outside of value range
         } else {
             ($(this).attr('id') == 'reverse')
             index--;
             index = index < 1 ? 12 : index;
         };
 
-        //update proportional symbols after new year is selected
-        //updatePropSymbols(mymap, attributes[index]);
+        //update month when buttons are pushed
         updateMonth(index);
 
         
@@ -321,24 +263,19 @@ function createSequenceControls(mymap){
     $('.range-slider').on('input', function(){
         var index = $(this).val();
 
-    //update proportional symbols based on changes to slider
-    //updatePropSymbols(mymap, attributes[index]);
+    //get the value of the slider upon input and change month
     updateMonth(index);
     });
 };
 
+//function to change the month being displayed
 function updateMonth(rangeindex) {
     var curDate = document.getElementById('dateshown').innerHTML;
-
-    console.log("ds= " + curDate);
-    console.log(typeof curDate);
-    
     if (rangeindex < 10){
         var newDate = curDate.slice(0,4) + "-0" + rangeindex.toString();
     } else {
         var newDate = curDate.slice(0,4) + "-" + rangeindex.toString();
     }
-    console.log("newDate- " + newDate);
     var newQuery = "datefmt = '" + newDate + "'";
     console.log("newQuery- " + newQuery)
     drought.setWhere(newQuery);
@@ -346,7 +283,7 @@ function updateMonth(rangeindex) {
     $('#dateshown').html(newDate);
     
 };
-
+//create function to change the year being displayed
 function updateYear() {
     var curDate = document.getElementById('dateshown').innerHTML;
         dateParts = curDate.split("-", 2);
@@ -358,8 +295,31 @@ function updateYear() {
         $('#dateshown').html(newDate);    
 };
 
+function highlightState(e) {
+    var layer = e.target;
 
+    layer.setStyle({
+        weight: 4,
+        color: '#19cdfa',
+        fillOpacity: 1
+    });
+};
 
+function unhighlightState(e) {
+    states.resetStyle(e.target);
+    //states.setStyle({
+      //  fillColor: 'none', 
+        //weight:1.5, 
+        //color:'#8c8c8c'
+    //});
+};
+
+function onEachFeature(feature, states) {
+    states.on({
+        mouseover: highlightState,
+        mouseout: unhighlightState
+    });
+};
 
 //create point layer from geojson layer
 function pointToLayer(feature, latlng, attributes){

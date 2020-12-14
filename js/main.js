@@ -40,6 +40,9 @@ var fireIcon5 = L.icon({
     iconSize: [90,90]
 });
 
+//function to turn places off when Topo is selected
+
+
 //Function to select icon size based on fire size
 function iconByAcres(feature){
     
@@ -124,7 +127,7 @@ function createMap(){
     var mymap = L.map('mapid', {
         center: [39, -95],
         zoom: 4,
-        layers: [imagery, places, fires, drought]
+        layers: [imagery, fires, drought, states]
     });
     
 
@@ -140,8 +143,7 @@ function createMap(){
     var overlayMaps = {
         "Places": places,
         "Fires": fires,
-        "Drought": drought, 
-        "States": states
+        "Drought": drought
     }
 
     L.control.layers(baseMaps, overlayMaps).addTo(mymap);
@@ -239,9 +241,9 @@ function createSequenceControls(mymap){
 
     //set properties for range slider
     $('.range-slider').attr({
-        max: 11,
-        min: 0,
-        value: 0,
+        max: 12,
+        min: 1,
+        value: 1,
         step: 1
     });
     /*$('.year').html('<option value="datefmt = \'2000-01\'">2000</option>' +
@@ -296,13 +298,13 @@ function createSequenceControls(mymap){
         //toggle to next year if forward is pressed unless it goes outside of value range
         if ($(this).attr('id') == 'forward'){
             index++;
-            index = index > 11 ? 0 : index;
+            index = index > 12 ? 1 : index;
 
         //toggle to last year if reverse is pressed unless it goes outside of value range
         } else {
             ($(this).attr('id') == 'reverse')
             index--;
-            index = index < 0 ? 11 : index;
+            index = index < 1 ? 12 : index;
         };
 
         //update proportional symbols after new year is selected
@@ -330,10 +332,11 @@ function updateMonth(rangeindex) {
 
     console.log("ds= " + curDate);
     console.log(typeof curDate);
-    if (rangeindex < 9){
-        var newDate = curDate.slice(0,4) + "-0" + (rangeindex + 1).toString();
+    
+    if (rangeindex < 10){
+        var newDate = curDate.slice(0,4) + "-0" + rangeindex.toString();
     } else {
-        var newDate = curDate.slice(0,4) + "-" + (rangeindex + 1).toString();
+        var newDate = curDate.slice(0,4) + "-" + rangeindex.toString();
     }
     console.log("newDate- " + newDate);
     var newQuery = "datefmt = '" + newDate + "'";

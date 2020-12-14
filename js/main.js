@@ -96,10 +96,10 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     
     //Add state data
     states = L.esri.featureLayer({
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/UStates/FeatureServer/0',
+    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/States_drought/FeatureServer/0',
     useCors: true,
-    simplifyFactor: 0.5,
-    precision: 5,
+    simplifyFactor: 0.6,
+    precision: 4,
     onEachFeature: onEachFeature,
     pane: 'statespane',
     style: {fillOpacity: 0, weight:1.5, color:'#8c8c8c'}

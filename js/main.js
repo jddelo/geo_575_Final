@@ -300,7 +300,7 @@ function highlightState(e) {
 
     layer.setStyle({
         weight: 4,
-        color: '#19cdfa',
+        color: '#000000',
         fillOpacity: 0
     });
 };

@@ -2,14 +2,14 @@
 //create blank function to create info window dialog when DOM is ready
 $(function () {
     $("#infowindow").dialog({
-        autoOpen: false,
+        autoOpen: true,
         height: 400,
         width: 600
     
     });
-    $(".info").click(function(){
+    $("#infowindow").scrollTop(0);
+    $(".info").click(function(){        
         $("#infowindow").dialog("open");
-
     });
 
 });   
@@ -58,7 +58,6 @@ function iconByAcres(feature){
 //Load basemaps
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
-
     gray = L.esri.basemapLayer('DarkGray'),
     
     places = L.esri.tiledMapLayer({

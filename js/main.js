@@ -2,14 +2,14 @@
 //create blank function to create info window dialog when DOM is ready
 $(function () {
     $("#infowindow").dialog({
-        autoOpen: false,
+        autoOpen: true,
         height: 400,
         width: 600
     
     });
-    $(".info").click(function(){
+    $("#infowindow").scrollTop(0);
+    $(".info").click(function(){        
         $("#infowindow").dialog("open");
-
     });
 
 });   
@@ -59,10 +59,10 @@ function iconByAcres(feature){
 var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
 
-    fires = L.esri.Heat.featureLayer({
+   // fires = L.esri.Heat.featureLayer({
     //url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/CommunityAddressing/MapServer/0',
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
-    radius: 60});
+   // url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/mtbs_FODpoints_DD_wgs84/FeatureServer/0',
+   // radius: 60});
 
     gray = L.esri.basemapLayer('DarkGray'),
     

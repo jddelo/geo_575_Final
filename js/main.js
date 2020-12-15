@@ -589,7 +589,7 @@ function newLegend(mymap){
 //};
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 30, left: 60},
+var margin = {top: 50, right: 30, bottom: 50, left: 70},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
@@ -598,47 +598,94 @@ var svg = d3.select("#my_dataviz")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("data/Drought_Data_by_State_Year.csv",
+d3.csv("data/Drought_Data_by_State_Year.csv", function(data) {
+    
+    // Parse the date variable
+    var parseDate = d3.timeParse("%Y-%m");
+    
+    //format acres
+    data.forEach(function(d) {
+      d.date = parseDate(d.date);
+      d.Acres = +d.Acres;
+    });
 
-  // When reading the csv, I must format variables:
-  function(d){
-    return { date : d3.timeParse("%Y-%m-%d")(d.date), value : d.Acres }
-  },
+    // group the data: one array for each value of the X axis.
+    var sumstat = d3.nest()
+      .key(function(d) { return d.date;})
+      .entries(data);
 
-  // Now I can use this dataset:
-  function(data) {
-
-    // Add X axis --> it is a date format
+    // Stack the data: each group will be represented on top of each other
+    var mygroups = ["D0", "D1", "D2", "D3", "D4"] // list of group names
+    var mygroup = [1,2,3,4,5] // list of group names
+    var stackedData = d3.stack()
+      .keys(mygroup)
+      .value(function(d, key){
+        return d.values[key].Acres
+      })
+      (sumstat)
+  
+    console.log (stackedData);
+  
+    // Add X axis
     var x = d3.scaleTime()
-      .domain(d3.extent(data, function(d) { return d.date; }))
+      .domain(d3.extent(data, function (d) {
+        return d.date;
+      }))
       .range([ 0, width ]);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x).ticks(10));
 
+   
+    // Add X axis label:
+    svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", width)
+      .attr("y", height+40 )
+      .text("Time");
+    
     // Add Y axis
     var y = d3.scaleLinear()
-      .domain([0, d3.max(data, function(d) { return +d.value; })])
+      .domain([0, d3.max(data, function(d) { return +d.Acres;  })*1.2])
       .range([ height, 0 ]);
     svg.append("g")
-      .call(d3.axisLeft(y));
+      .call(d3.axisLeft(y)
+          .ticks(10)
+          .tickSizeInner(0)
+          .tickPadding(6)
+          .tickSize(0, 0));
+    
+    // Add Y axis label:
+    svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", -57)
+      .attr("y", -20 )
+      .text("Number of acres")
+      .attr("text-anchor", "start")
+   
+    
+    // color palette
+    var color = d3.scaleOrdinal()
+      .domain(mygroups)
+      .range(['#ff0','#fcd37f','#fa0','#e60000','#730000'])
 
     // Add the area
-    svg.append("path")
-      .datum(data)
-      .attr("fill", "#cce5df")
-      .attr("stroke", "#69b3a2")
-      .attr("stroke-width", 1.5)
+    svg
+      .selectAll("mylayers")
+      .data(stackedData)
+      .enter()
+      .append("path")
+      .style("fill", function(d) { name = mygroups[d.key-1] ;  return color(name); })
       .attr("d", d3.area()
-        .x(function(d) { return x(d.date) })
-        .y0(y(0))
-        .y1(function(d) { return y(d.value) })
-        )
+        .x(function(d, i) { return x(d.data.key); })
+        .y0(function(d) { return y(d[0]); })
+        .y1(function(d) { return y(d[1]); })
+    )
 
 })
 

@@ -615,7 +615,7 @@ d3.csv("data/Drought_Data_by_State_Year.csv", function(data) {
 
     // group the data: one array for each value of the X axis.
     var sumstat = d3.nest()
-      .key(function(d) { return d.date;})
+      .key(function(d) { return +d.date;})
       .entries(data);
 
     // Stack the data: each group will be represented on top of each other

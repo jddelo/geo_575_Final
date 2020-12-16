@@ -4,7 +4,7 @@ $(function () {
     $("#infowindow").dialog({
         autoOpen: true,
         height: 400,
-        width: 600
+        width: 900
     
     });
     $("#infowindow").scrollTop(0);
@@ -109,10 +109,15 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     fires.bindPopup(function (layer){
         return L.Util.template('<p>{BurnBndAc} Acres Burned</p>', layer.feature.properties);
     });
-//    fires.on('mouseover', function () {
-//        this.openPopup();
-//    });
     fires.on('mouseout', function () {
+        this.closePopup();
+    });
+
+    //Create pop up for fires
+    states.bindPopup(function (layer){
+        return L.Util.template('<p>{STATE_NAME}</p>', layer.feature.properties);
+    });
+    states.on('mouseout', function () {
         this.closePopup();
     });
 
@@ -125,10 +130,6 @@ function createMap(){
         zoom: 4,
         layers: [imagery, fires, drought, states]
     });
-    
-
-    //call getData function
-    //getData(mymap);
     
     //get layers and add to layer control operator
     var baseMaps = {
@@ -156,34 +157,12 @@ function createMap(){
     //add layers & layer control to map
     L.control.layers(baseMaps, overlayMaps).addTo(mymap);
 
-//define update proportional symbols function 
-//function updatePropSymbols(mymap,attribute){
-//    mymap.eachLayer(function(layer){
-//        if (layer.feature && layer.feature.properties[attribute]){
-//            var props = layer.feature.properties;
-//            //calculate radius based on value from currently selected year
-//            var radius = calcPropRadius(props[attribute]);
-//            layer.setRadius(radius);
-//            //create new popups based on new values
-//            var popup = new Popup(props, attribute, layer, radius);
-//            popup.bindToLayer();
-//            
-//            //run update legend function after symbols are updated
-//            updateLegend(mymap, attribute);
-//        };
-//    });
-//};
-
-
     //add event listener for year query change and call updateYear function
     var yearquery = document.getElementById('yearselect');
     yearquery.addEventListener('change', function () {
         updateYear();
     });
 };
-
-
-
 
 //create sequence controls for map data
 function createSequenceControls(mymap){
@@ -344,122 +323,10 @@ function unhighlightState(e) {
 function onEachFeature(feature, states) {
     states.on({
         mouseover: highlightState,
-        mouseout: unhighlightState
+        mouseout: unhighlightState,
 
     });
 };
-
-////function to change the month being displayed
-//function updateMonth(rangeindex) {
-//    var curDate = document.getElementById('dateshown').innerHTML;
-//    if (rangeindex < 10){
-//        var newDate = curDate.slice(0,4) + "-0" + rangeindex.toString();
-//    } else {
-//        var newDate = curDate.slice(0,4) + "-" + rangeindex.toString();
-//    }
-//    var newQuery = "datefmt = '" + newDate + "'";
-//    console.log("newQuery- " + newQuery)
-//    drought.setWhere(newQuery);
-//    fires.setWhere(newQuery);
-//    $('#dateshown').html(newDate);
-//    
-//};
-//
-////create function to change the year being displayed
-//function updateYear() {
-//    var curDate = document.getElementById('dateshown').innerHTML;
-//        dateParts = curDate.split("-", 2);
-//        newYear = document.getElementById('yearselect').value;
-//        newDate = newYear + "-" + dateParts[1];
-//        newQuery = "datefmt = '" + newDate + "'";
-//        drought.setWhere(newQuery);
-//        fires.setWhere(newQuery);
-//        $('#dateshown').html(newDate);    
-//};
-//
-//function highlightState(e) {
-//    var layer = e.target;
-//
-//    layer.setStyle({
-//        weight: 4,
-//        color: '#000000',
-//        fillOpacity: 0
-//    });
-//};
-//
-//function unhighlightState(e) {
-//    states.resetStyle(e.target);
-//    //states.setStyle({
-//      //  fillColor: 'none', 
-//        //weight:1.5, 
-//        //color:'#8c8c8c'
-//    //});
-//};
-//
-//function onEachFeature(feature, states) {
-//    states.on({
-//        mouseover: highlightState,
-//        mouseout: unhighlightState
-//
-//    });
-//};
-
-//create point layer from geojson layer
-//function pointToLayer(feature, latlng, attributes){
-//    var attribute = attributes[0];
-//
-//    //set symbol properties
-//    var options = {
-//        fillColor: "#C71585",
-//        color: "#4C2882",
-//        weight: 1,
-//        opacity: 1,
-//        fillOpacity: 0.8
-//    };
-//
-//    //get attribute values as numbers
-//    var attValue = Number(feature.properties[attribute]);
-//
-//    //calculate radius based on values
-//    options.radius = calcPropRadius(attValue);
-//
-//    //create the feature with the options chosen
-//    var layer = L.circleMarker(latlng, options);
-//
-//
-//    //create & bind a popup for newly created featues
-//     var popup = new Popup(feature.properties, attribute, layer, options.radius);
-//     popup.bindToLayer();
-//
-//    //open popup for layer interaction, mouseover & click
-//    layer.on({
-//        mouseover: function(){
-//            this.openPopup();
-//        },
-//        click: function(){
-//           this.openPopup();
-//        }
-//    });
-//    return layer;
-//};
-
-//create function for proportional symbols, set scale factor & do maths to calculate radius of symbols
-//function calcPropRadius(attValue) {
-//    var scaleFactor = .050;
-//    var area = attValue * scaleFactor;
-//    var radius = Math.sqrt(area/Math.PI);
-//
-//    return radius;
-//};
-
-//take data, create geojson layer & run pointToLayer to convert to layer & add to map
-//function createPropSymbols(data,mymap, attributes){
-//    L.geoJson(data, {
-//        pointToLayer: function(feature, latlng){
-//            return pointToLayer(feature, latlng, attributes);
-//        }
-//    }).addTo(mymap);   
-//};
 
 
 //process geojson data, create attribute array from input properties
@@ -477,27 +344,6 @@ function onEachFeature(feature, states) {
 //    };
 //    return attributes;
 //};
-
-//function to update legend upon input from user controls
-//function updateLegend(mymap, attribute){
-//    var year = attribute;
-//    //change text based on year selected
-//    $('#temporal-legend').html("Cancer Mortalities in " + year);
-//    //change symbol sizes based on data
-//    var circleValues = getCircleValues(mymap, attribute);
-//
-//    for (var key in circleValues){
-//        var radius =calcPropRadius(circleValues[key]);
-//        $('#'+key).attr({
-//            cy:59-radius,
-//            r:radius
-//        });
-//
-//        $('#'+key+'-text').text(Math.round(circleValues[key]*100)/100);
-//    };
-//
-//} ; 
-
 
 function newLegend(mymap){
     
@@ -615,7 +461,7 @@ d3.csv("data/Drought_Data_by_State_Year.csv", function(data) {
 
     // group the data: one array for each value of the X axis.
     var sumstat = d3.nest()
-      .key(function(d) { return d.date;})
+      .key(function(d) { return +d.date;})
       .entries(data);
 
     // Stack the data: each group will be represented on top of each other

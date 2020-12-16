@@ -109,12 +109,18 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     fires.bindPopup(function (layer){
         return L.Util.template('<p>{BurnBndAc} Acres Burned</p>', layer.feature.properties);
     });
-//    fires.on('mouseover', function () {
-//        this.openPopup();
-//    });
     fires.on('mouseout', function () {
         this.closePopup();
     });
+
+    //Create pop up for fires
+    states.bindPopup(function (layer){
+        return L.Util.template('<p>{STATE_NAME}</p>', layer.feature.properties);
+    });
+    states.on('mouseout', function () {
+        this.closePopup();
+    });
+
 
 
 //create map

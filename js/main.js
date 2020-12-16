@@ -4,7 +4,7 @@ $(function () {
     $("#infowindow").dialog({
         autoOpen: true,
         height: 400,
-        width: 600
+        width: 900
     
     });
     $("#infowindow").scrollTop(0);

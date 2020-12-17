@@ -128,4 +128,12 @@
     bottom: 3px;
 }
 
-
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    left:0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}

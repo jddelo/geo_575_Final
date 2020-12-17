@@ -80,19 +80,18 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
 
         style: function (feature){
             if (feature.properties.DM === 4) {
-                return {color: '#730000', fillOpacity: '0.7', opacity: '0.5', weight: 1};
+                return {color: '#640000', fillOpacity: '0.7', opacity: '0.5', weight: 1};
             } else if (feature.properties.DM === 3) {
-                return {color: '#e60000',  fillOpacity: '0.65',opacity: '0.5', weight: 1};
+                return {color: '#fe0000',  fillOpacity: '0.65',opacity: '0.5', weight: 1};
             } else if (feature.properties.DM === 2) {
-                return {color: '#fa0',  fillOpacity: '0.65',opacity: '0.5', weight: 1};
+                return {color: '#fe6603',  fillOpacity: '0.65',opacity: '0.5', weight: 1};
             } else if (feature.properties.DM === 1) {
-                return {color: '#fcd37f',  fillOpacity: '0.65', opacity: '0.5', weight: 1};
+                return {color: '#ffcb99',  fillOpacity: '0.65', opacity: '0.5', weight: 1};
             } else {
-                return {color: '#ff0',  fillOpacity: '0.5',opacity: '0.5', weight: 1};
+                return {color: '#fffe03',  fillOpacity: '0.5',opacity: '0.5', weight: 1};
             }
         }
     }),
-    
     
     //Add state data
     states = L.esri.featureLayer({
@@ -113,7 +112,7 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
         this.closePopup();
     });
 
-    //Create pop up for fires
+    //Create pop up for states
     states.bindPopup(function (layer){
         return L.Util.template('<p>{STATE_NAME}</p>', layer.feature.properties);
     });
@@ -351,6 +350,12 @@ function newLegend(mymap){
 
     legend.onAdd = function(mymap){
         var div = L.DomUtil.create("div", "legend");
+        div.innerHTML += "<h4>Drought Intensity</h4>";
+        div.innerHTML += '<i style="background: #fffe03"></i><span>D0-Abnormally Dry</span><br>';
+        div.innerHTML += '<i style="background: #ffcb99"></i><span>D1-Moderate Drought</span><br>';
+        div.innerHTML += '<i style="background: #fe6603"></i><span>D2-Severe Drought</span><br>';
+        div.innerHTML += '<i style="background: #fe0000"></i><span>D3-Extreme Drought</span><br>';
+        div.innerHTML += '<i style="background: #640000"></i><span>D4-Exceptional Drought</span><br>';
         div.innerHTML += "<h4>Fire Size (Acres)</h4>";
         div.innerHTML += '<img src="img/forest.png" height="10" width ="10"><text> < 1k</text><br>';
         div.innerHTML += '<img src="img/forest.png" height="25" width ="25"><span> 1k - 5k</span><br>';
@@ -364,74 +369,6 @@ function newLegend(mymap){
     legend.addTo(mymap);  
 
 };
-
-
-//create legend class by extending leaflet control
-//function createLegend(mymap, attributes){
-//    var LegendControl= L.Control.extend({
-//        options: {
-//            position: 'bottomright'
-//        },
-//        //create div for legend
-//        onAdd: function(mymap) {
-//            var container = L.DomUtil.create('div', 'legend-control-container');
-//           //add temporal legend to legend div
-//           $(container).append('<div id="temporal-legend">')
-//            //set properties for svg marker
-//           var svg = '<svg id="attribute-legend" width="120px" height="80px">';
-//
-//           var circles = {
-//               max:20,
-//               mean:40,
-//               min:60
-//           };
-//
-//           for (var circle in circles){
-//               svg += '<circle class="legend-circle" id="' + circle + '" fill="#C71585" fill-opacity="0.8" stroke="#4C2882" cx="30"/>';
-//               svg += '<text id="' + circle + '-text" x="65" y = "' + circles[circle] + '"></text>';
-//           };
-//
-//           svg += "</svg>";
-//
-//           //add svg to legend
-//           $(container).append(svg);
-//           
-//           return container;        
-//        }
-//    });
-//
-//    //add legend to map
-//    mymap.addControl(new LegendControl());
-
-    //update legend based on any changes to sequence controls
-    //updateLegend(mymap, attributes[0]);
-//};
-
-//get attribute values & prepare for legend
-//function getCircleValues(mymap, attribute){
-//    var min= Infinity,
-//    max = -Infinity;
-//    mymap.eachLayer(function(layer){
-//        if(layer.feature){
-//            var attributeValue = Number(layer.feature.properties[attribute]);
-//
-//            if(attributeValue < min){
-//                min=attributeValue;
-//            };
-//            if(attributeValue >max){
-//                max = attributeValue;
-//            };
-//        };
-//    });
-//
-//    var mean = (max + min) / 2;
-//
-//    return {
-//        max:max,
-//        mean:mean,
-//        min:min
-//    };
-//};
 
 // set the dimensions and margins of the graph
 var margin = {top: 50, right: 30, bottom: 50, left: 70},

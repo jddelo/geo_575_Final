@@ -60,8 +60,10 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     topo = L.esri.basemapLayer('Topographic'),
     gray = L.esri.basemapLayer('DarkGray'),
     
+    //add places data
     places = L.esri.tiledMapLayer({
-        url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'}),
+        url: 'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer'
+    }),
     
     //Add the fire data, style it based on acres burned, and symbolize with custom icon
     fires = L.esri.featureLayer({
@@ -95,32 +97,30 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     
     //Add state data
     states = L.esri.featureLayer({
-    url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/States_drought/FeatureServer/0',
-    useCors: true,
-    simplifyFactor: 0.6,
-    precision: 4,
-    onEachFeature: onEachFeature,
-    pane: 'statespane',
-    style: {fillOpacity: 0, weight:1.5, color:'#8c8c8c'}
+        url: 'https://services.arcgis.com/HRPe58bUyBqyyiCt/arcgis/rest/services/States_drought/FeatureServer/0',
+        useCors: true,
+        simplifyFactor: 0.6,
+        precision: 4,
+        onEachFeature: onEachFeature,
+        pane: 'statespane',
+        style: {fillOpacity: 0, weight:1.5, color:'#8c8c8c'}
     });
 
     //Create pop up for fires
     fires.bindPopup(function (layer){
         return L.Util.template('<p>Name: {Incid_Name}<br> {BurnBndAc} Acres Burned</p>', layer.feature.properties);
     });
+
     fires.on('mouseout', function () {
         this.closePopup();
     });
 
-    //Create pop up for fires
+    //Create pop up for states
     states.on('click', function (evt) {
         feature = evt.layer.feature;
         var statename = feature.properties.STATE_ABBR;
         makeChart(statename);
     });
-    
-  
-
 
 //create map
 function createMap(){
@@ -137,6 +137,7 @@ function createMap(){
         "Topographic": topo,
         "Gray": gray
     }
+    
     var overlayMaps = {
         "Places": places,
         "Fires": fires,
@@ -205,6 +206,7 @@ function createSequenceControls(mymap){
         value: 1,
         step: 1
     });
+    
     // set the properties for the year selector
     $('.year').html('<option value="2000">2000</option>' +
                     '<option value="2001">2001</option>' +
@@ -225,6 +227,7 @@ function createSequenceControls(mymap){
                     '<option value="2016">2016</option>' +
                     '<option value="2017">2017</option>' +
                     '<option value="2018">2018</option>')
+    
     //add arrow images to the skip buttons
     $('#reverse').html('<img src = "img/back.png">');
     $('#forward').html('<img src = "img/forward.png">');
@@ -289,6 +292,7 @@ function updateMonth(rangeindex) {
     $('#dateshown').html(newDate);
     
 };
+
 //create function to change the year being displayed
 function updateYear() {
     var curDate = document.getElementById('dateshown').innerHTML;
@@ -301,6 +305,7 @@ function updateYear() {
         $('#dateshown').html(newDate);    
 };
 
+//create function to highlight states
 function highlightState(e) {
     var layer = e.target;
 
@@ -311,6 +316,7 @@ function highlightState(e) {
     });
 };
 
+//create function to unhighlight states
 function unhighlightState(e) {
     states.resetStyle(e.target);
     //states.setStyle({
@@ -376,9 +382,11 @@ function newLegend(mymap){
 
 };
 
+//function to create the chart
 function makeChart(state) {
     openNav()
     var filterDate = document.getElementById("dateshown").innerHTML;
+    
     // set the dimensions and margins of the graph
     var margin = {top: 50, right: 30, bottom: 50, left: 70},
         width = 460 - margin.left - margin.right,
@@ -399,20 +407,18 @@ function makeChart(state) {
         // Parse the date variable
         var parseDate = d3.timeParse("%Y-%m");
         
-        //format acres
+        //format date and acres
         data.forEach(function(d) {
         d.date = parseDate(d.date);
         d.Acres = +d.Acres;
         });
-
-
 
         // group the data: one array for each value of the X axis.
         var sumstat = d3.nest()
         .key(function(d) { return +d.date;})
         .entries(data);
 
-        // Stack the data: each group will be represented on top of each other
+        // Stack the data
         var mygroups = ["D0", "D1", "D2", "D3", "D4"] // list of group names
         var mygroup = [1,2,3,4,5] // list of group names
         var stackedData = d3.stack()
@@ -459,12 +465,10 @@ function makeChart(state) {
         .text("Number of acres")
         .attr("text-anchor", "start")
     
-        
         // color palette
         var color = d3.scaleOrdinal()
         .domain(mygroups)
         .range(['#ff0','#fcd37f','#fa0','#e60000','#730000'])
-
 
         console.log("stateabbr" + state + "filterdate " + filterDate)
 

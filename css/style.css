@@ -1,18 +1,24 @@
 #maptitle {
-    background-color: #848482;
+    background-color: #595551;
     vertical-align: middle;
     border-style: solid;
     border-color: #353839;
+    height: 100px;
 }
 
 #mapT {
     padding: 12.5px;
     text-align: center;
     margin: 0em;
-    color: #E5E4E2;
-    font-family:"palatino","bookman";
-    font-size: 1.5em;
-    text-shadow: 1.5px 1.5px #727472; 
+    color: #FFFFFF;
+    font-size: 2.5em;
+    text-shadow: 1.5px 1.5px #727472;
+    font-family: Arvo; 
+    font-style: normal; 
+    font-variant: small-caps;
+    font-weight: 700; 
+    line-height: 65px; 
+    
 }
 
 .leaflet-popup-content p {
@@ -39,9 +45,10 @@
 .sequence-control-container.leaflet-control{
     text-align: center;
     vertical-align: middle;
-    background-color: #848482;
+    background-color: #595551;
     border-style: solid;
     border-color: #353839;
+    color: #FFFFFF;
 }
 
 #attribute-legend {
@@ -64,7 +71,7 @@
 
 #forward {
     float: right;
-    background-color:  #848482;
+    background-color:  #afabac;
     border-color: transparent;
 }
 
@@ -74,7 +81,7 @@
 
 #reverse {
     float:left;
-    background-color:  #848482;
+    background-color:  #afabac;
     border-color: transparent;
 }
 
@@ -87,7 +94,7 @@
 }
 
 .info {
-    background-color: #848482;
+    background-color: #afabac;
     float: right;
     margin-right: 16px;
 }
@@ -113,13 +120,19 @@
     text-align: right;
     font-size: 13px;
     color: #353839;
+    
 }
 
 .legend h4{
     text-align: center;
     font-size: 16px;
     margin: 2px 12px 8px;
-    color: #353839;
+    color: #595551;
+    font-style: normal; 
+    font-variant: small-caps;
+    font-weight: 550; 
+    padding-top: 8px;
+    padding-bottom: 3px;
 }
 
 .legend span {

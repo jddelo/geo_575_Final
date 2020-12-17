@@ -106,19 +106,29 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
 
     //Create pop up for fires
     fires.bindPopup(function (layer){
-        return L.Util.template('<p>{BurnBndAc} Acres Burned</p>', layer.feature.properties);
+        return L.Util.template('<p>Name: {Incid_Name}<br> {BurnBndAc} Acres Burned</p>', layer.feature.properties);
     });
     fires.on('mouseout', function () {
         this.closePopup();
     });
 
+<<<<<<< HEAD
     //Create pop up for states
     states.bindPopup(function (layer){
         return L.Util.template('<p>{STATE_NAME}</p>', layer.feature.properties);
     });
     states.on('mouseout', function () {
         this.closePopup();
+=======
+    //Create pop up for fires
+    states.on('click', function (evt) {
+        feature = evt.layer.feature;
+        var statename = feature.properties.STATE_ABBR;
+        makeChart(statename);
+>>>>>>> jdelo
     });
+    
+  
 
 
 //create map
@@ -304,8 +314,8 @@ function highlightState(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 4,
-        color: '#000000',
+        weight: 4.5,
+        color: '#8c8c8c',
         fillOpacity: 0
     });
 };
@@ -319,30 +329,35 @@ function unhighlightState(e) {
     //});
 };
 
+//open the info window pane
+function openNav() {
+    document.getElementById("my_dataviz").style.width = "25%";
+    document.getElementById("mapid").style.width = "75%";
+  };
+
+//close the info window pane
+function closeNav() {
+    document.getElementById("my_dataviz").style.width = "0";
+    document.getElementById("mapid").style.width = "100%";
+  };
+
+//add interaction to states layer
 function onEachFeature(feature, states) {
     states.on({
         mouseover: highlightState,
         mouseout: unhighlightState,
+        //click: openChart
 
     });
 };
 
-
-//process geojson data, create attribute array from input properties
-//function processData(data){
-//    var attributes = [];
-//
-//    var properties = data.features[0].properties;
-//    //add years to attributes but keep state name separate
-//    for (var attribute in properties){
-//        if (attribute.indexOf("State") > -1){
-//
-//        } else {
-//            attributes.push(attribute);
-//        };
-//    };
-//    return attributes;
-//};
+//function to open info window with state chart
+/*function openChart(e) {
+    states.on("click", function(evt) {
+        var statename = evt.graphic.attributes.STATE_NAME;
+        console.log("state name -" + statename);
+    });
+};  */
 
 function newLegend(mymap){
     
@@ -370,6 +385,7 @@ function newLegend(mymap){
 
 };
 
+<<<<<<< HEAD
 // set the dimensions and margins of the graph
 var margin = {top: 50, right: 30, bottom: 50, left: 70},
     width = 460 - margin.left - margin.right,
@@ -389,87 +405,119 @@ d3.csv("data/Drought_Data_by_State_Year.csv", function(data) {
     
     // Parse the date variable
     var parseDate = d3.timeParse("%Y-%m");
+=======
+function makeChart(state) {
+    openNav()
+    var filterDate = document.getElementById("dateshown").innerHTML;
+    // set the dimensions and margins of the graph
+    var margin = {top: 50, right: 30, bottom: 50, left: 70},
+        width = 460 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    var svg = d3.select("#my_dataviz")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+    //Read the data
+    d3.csv("data/Drought_Data_by_State_Year.csv", function(data) {
+
+        // Parse the date variable
+        var parseDate = d3.timeParse("%Y-%m");
+        
+        //format acres
+        data.forEach(function(d) {
+        d.date = parseDate(d.date);
+        d.Acres = +d.Acres;
+        });
+
+
+
+        // group the data: one array for each value of the X axis.
+        var sumstat = d3.nest()
+        .key(function(d) { return +d.date;})
+        .entries(data);
+
+        // Stack the data: each group will be represented on top of each other
+        var mygroups = ["D0", "D1", "D2", "D3", "D4"] // list of group names
+        var mygroup = [1,2,3,4,5] // list of group names
+        var stackedData = d3.stack()
+        .keys(mygroup)
+        .value(function(d, key){
+            return d.values[key].Acres
+        })
+        (sumstat)
+>>>>>>> jdelo
     
-    //format acres
-    data.forEach(function(d) {
-      d.date = parseDate(d.date);
-      d.Acres = +d.Acres;
-    });
+        // Add X axis
+        var x = d3.scaleTime()
+            .domain(d3.extent(data, function (d) {
+            return d.date;
+        }))
+        .range([ 0, width ]);
+        svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x).ticks(10));
 
-    // group the data: one array for each value of the X axis.
-    var sumstat = d3.nest()
-      .key(function(d) { return +d.date;})
-      .entries(data);
-
-    // Stack the data: each group will be represented on top of each other
-    var mygroups = ["D0", "D1", "D2", "D3", "D4"] // list of group names
-    var mygroup = [1,2,3,4,5] // list of group names
-    var stackedData = d3.stack()
-      .keys(mygroup)
-      .value(function(d, key){
-        return d.values[key].Acres
-      })
-      (sumstat)
-  
-    console.log (stackedData);
-  
-    // Add X axis
-    var x = d3.scaleTime()
-        .domain(d3.extent(data, function (d) {
-        return d.date;
-      }))
-      .range([ 0, width ]);
-    svg.append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x).ticks(10));
-
-   
-    // Add X axis label:
-    svg.append("text")
-      .attr("text-anchor", "end")
-      .attr("x", width)
-      .attr("y", height+40 )
-      .text("Time");
     
-    // Add Y axis
-    var y = d3.scaleLinear()
-      .domain([0, d3.max(data, function(d) { return +d.Acres;  })*1.2])
-      .range([ height, 0 ]);
-    svg.append("g")
-      .call(d3.axisLeft(y)
-          .ticks(10)
-          .tickSizeInner(0)
-          .tickPadding(6)
-          .tickSize(0, 0));
+        // Add X axis label:
+        svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("x", width)
+        .attr("y", height+40 )
+        .text("Time");
+        
+        // Add Y axis
+        var y = d3.scaleLinear()
+        .domain([0, d3.max(data, function(d) { return +d.Acres;  })*1.2])
+        .range([ height, 0 ]);
+        svg.append("g")
+        .call(d3.axisLeft(y)
+            .ticks(10)
+            .tickSizeInner(0)
+            .tickPadding(6)
+            .tickSize(0, 0));
+        
+        // Add Y axis label:
+        svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("x", -57)
+        .attr("y", -20 )
+        .text("Number of acres")
+        .attr("text-anchor", "start")
     
-    // Add Y axis label:
-    svg.append("text")
-      .attr("text-anchor", "end")
-      .attr("x", -57)
-      .attr("y", -20 )
-      .text("Number of acres")
-      .attr("text-anchor", "start")
-   
-    
-    // color palette
-    var color = d3.scaleOrdinal()
-      .domain(mygroups)
-      .range(['#ff0','#fcd37f','#fa0','#e60000','#730000'])
+        
+        // color palette
+        var color = d3.scaleOrdinal()
+        .domain(mygroups)
+        .range(['#ff0','#fcd37f','#fa0','#e60000','#730000'])
 
-    // Add the area
-    svg
-      .selectAll("mylayers")
-      .data(stackedData)
-      .enter()
-      .append("path")
-      .style("fill", function(d) { name = mygroups[d.key-1] ;  return color(name); })
-      .attr("d", d3.area()
-        .x(function(d, i) { return x(d.data.key); })
-        .y0(function(d) { return y(d[0]); })
-        .y1(function(d) { return y(d[1]); })
-    )
 
-})
+        console.log("stateabbr" + state + "filterdate " + filterDate)
+
+
+        // Add the area
+        svg
+        .selectAll("mylayers")
+        .data(stackedData)
+        .enter()
+        //.filter(function(row) {
+        //    return row['STATE_ABBR'] == state ;
+        //})
+        .append("path")
+        .style("fill", function(d) { name = mygroups[d.key-1] ;  return color(name); })
+        .attr("d", d3.area()
+            .x(function(d, i) { return x(d.data.key); })
+            .y0(function(d) { return y(d[0]); })
+            .y1(function(d) { return y(d[1]); })
+        )
+
+    })
+};
 
 //create the map when the dom is ready
 $(document).ready(createMap);

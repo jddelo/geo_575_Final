@@ -112,20 +112,11 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
         this.closePopup();
     });
 
-<<<<<<< HEAD
-    //Create pop up for states
-    states.bindPopup(function (layer){
-        return L.Util.template('<p>{STATE_NAME}</p>', layer.feature.properties);
-    });
-    states.on('mouseout', function () {
-        this.closePopup();
-=======
     //Create pop up for fires
     states.on('click', function (evt) {
         feature = evt.layer.feature;
         var statename = feature.properties.STATE_ABBR;
         makeChart(statename);
->>>>>>> jdelo
     });
     
   
@@ -385,27 +376,6 @@ function newLegend(mymap){
 
 };
 
-<<<<<<< HEAD
-// set the dimensions and margins of the graph
-var margin = {top: 50, right: 30, bottom: 50, left: 70},
-    width = 460 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
-
-// append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
-  .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
-
-//Read the data
-d3.csv("data/Drought_Data_by_State_Year.csv", function(data) {
-    
-    // Parse the date variable
-    var parseDate = d3.timeParse("%Y-%m");
-=======
 function makeChart(state) {
     openNav()
     var filterDate = document.getElementById("dateshown").innerHTML;
@@ -451,7 +421,6 @@ function makeChart(state) {
             return d.values[key].Acres
         })
         (sumstat)
->>>>>>> jdelo
     
         // Add X axis
         var x = d3.scaleTime()

@@ -26,7 +26,7 @@
 			month and year selected in YYYY-MM format.  <br>
 			A layer control widget is located in the upper-right corner of the map. You can toggle the basemap between aerial imagery, 
 			topographic, and dark gray, and also select which operational layers will be displayed on the map including fires, drought, and 
-			reference borders and places. 
+			places for reference. 
 			<br><br>
 			<b><u>About the Data:</u></b><br><br>
 			Fire data shown in the map is from the Monitoring Trends in Burn Severity (MTBS) program for the years 2000-2018.  
@@ -53,17 +53,20 @@
             -Drought data from: <a href="https://www.drought.gov" target="_blank">National Integrated Drought Information System</a><br>
 			-Arrow icon by Alice Design from the Noun Project,<br> 
 			-Info icon by Joe Pictos from the Noun Project<br>
-            -Forest fire icon from freesvg.org</p></div>
+            -Forest fire icon from freesvg.org</p>
+        </div>
+        
 		<!--create div for map title and info button-->
 		<div id="maptitle"><p id="mapT">Studying the Effect of Drought on Wildfires in the United States
 
 		<button class = "info"><img src = 'img/info.png' ></button><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span></p></div>
 		
-       <!-- Create a div where the graph will take place -->
-	   <div id="my_dataviz" class = "sidenav">
+        <!-- Create a div where the graph will take place -->
+	    <div id="my_dataviz" class = "sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&rArr;</a>
-	   </div>
-
+	    </div>
+        
+        <!--create div for the map -->
 		<div id="mapid"></div>
 		
 
@@ -74,7 +77,6 @@
 	   <script type="text/javascript" src ="lib/leaflet/leaflet.js"></script>
 	   <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
 	   <script type="text/javascript" src= "lib/jquery-ui-1.12.1//jquery-ui.js"></script>
-
 	   <script src="https://unpkg.com/esri-leaflet@2.5.1/dist/esri-leaflet.js"></script>
 <!--		<script src="https://unpkg.com/esri-leaflet-renderers@2.1.2"></script>-->
 =======

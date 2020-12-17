@@ -415,7 +415,7 @@ d3.csv("data/Drought_Data_by_State_Year.csv", function(data) {
   
     // Add X axis
     var x = d3.scaleTime()
-      .domain(d3.extent(data, function (d) {
+        .domain(d3.extent(data, function (d) {
         return d.date;
       }))
       .range([ 0, width ]);

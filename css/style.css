@@ -102,7 +102,7 @@
 .legend {
     padding: 6px 8px;
     font: 14px Arial, Helvetica, sans-serif;
-    background: : white;
+    background: white;
     background: rgba(255, 255, 255, 1);
     line-height: 24px;
     color: #555;
@@ -137,4 +137,14 @@
 .legend i.icon {
   background-size: 18px;
   background-color: rgba(255, 255, 255, 1);
+
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    left:0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
 }

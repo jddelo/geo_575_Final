@@ -119,7 +119,10 @@ var imagery = L.esri.basemapLayer('ImageryFirefly'),
     states.on('click', function (evt) {
         feature = evt.layer.feature;
         var statename = feature.properties.STATE_ABBR;
-        makeChart(statename);
+        var yd = document.getElementById("dateshown").innerHTML;
+        var yr = yd.split("-")[0]
+        var filteryear = yd.split("-")[0] + statename
+        makeSummary(statename, yr, firejson[filteryear]);
     });
 
 //create map
@@ -143,6 +146,9 @@ function createMap(){
         "Fires": fires,
         "Drought": drought
     }
+
+    //get json data 
+    getData(mymap);
 
     //create a pane to put states on top
     mymap.createPane('statespane');
@@ -348,14 +354,6 @@ function onEachFeature(feature, states) {
     });
 };
 
-//function to open info window with state chart
-/*function openChart(e) {
-    states.on("click", function(evt) {
-        var statename = evt.graphic.attributes.STATE_NAME;
-        console.log("state name -" + statename);
-    });
-};  */
-
 function newLegend(mymap){
     
     var legend = L.control({position: "bottomleft"});
@@ -382,10 +380,35 @@ function newLegend(mymap){
 
 };
 
-//function to create the chart
-function makeChart(state) {
+var  firejson = {}
+//load fire summary table
+function getData(mymap){   
+    $.getJSON( "data/Fire_Table_by_State.json", function( data ) {
+        $.each( data, function( key, val ) {
+            firejson[val.year + val.state_abbr]= val
+         });
+    });
+};
+
+
+//function to add fire summary data to DOM
+function makeSummary(statename, yr, data) {
     openNav()
-    var filterDate = document.getElementById("dateshown").innerHTML;
+    
+    if (data == undefined) {
+        $('#summText').html('There were no large fires in ' + statename + ' in ' + yr);
+    } else {
+        $('#summText').html('<h2>Fire Summary<br>' + statename + ' ' + yr + ' </h2>' +
+                              '<br>Total Large Fires: ' + data.count + '<br>Total Acreage Burned: ' + data.total_ac);
+    };
+   
+    console.log(typeof data);
+    console.log(data.count);
+
+
+
+
+/* failed stacked area chart attempt
     
     // set the dimensions and margins of the graph
     var margin = {top: 50, right: 30, bottom: 50, left: 70},
@@ -489,7 +512,7 @@ function makeChart(state) {
             .y1(function(d) { return y(d[1]); })
         )
 
-    })
+    }) */
 };
 
 //create the map when the dom is ready

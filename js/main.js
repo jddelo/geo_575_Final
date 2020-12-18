@@ -173,6 +173,7 @@ function createSequenceControls(mymap){
             position: 'bottomright'
         },
         onAdd: function (mymap){
+            
             //create new div for sequence controller & add all control buttons/slider/year query selector & current displayed value text
             var container = L.DomUtil.create('div', 'sequence-control-container');
             $(container).append('<p class = "curDate" id = "dateshown"></p>');
@@ -264,14 +265,7 @@ function createSequenceControls(mymap){
     //get the value fron the range slider to use for year index
     $('.range-slider').on('input', function(){
         var index = $(this).val();
-
-
-    //update proportional symbols based on changes to slider
-    updatePropSymbols(mymap, attributes[index]);
-
-    //get the value of the slider upon input and change month
-    updateMonth(index);
-
+        
     //get the value of the slider upon input and change month
     updateMonth(index);
     });

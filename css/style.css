@@ -42,6 +42,7 @@
     margin-bottom: 26px;
 }
 
+
 .sequence-control-container.leaflet-control{
     text-align: center;
     vertical-align: middle;
@@ -53,6 +54,24 @@
     font-style: normal;
     font-size: 14px;
 }
+/*
+.sequence-control-container.leaflet-control{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #595551;
+    border-style: solid;
+    border-color: #353839;
+    color: #FFFFFF;
+    font-family: Arvo; 
+    font-style: normal;
+    font-size: 14px;
+}
+*/
 
 #attribute-legend {
     padding-left: 10px;

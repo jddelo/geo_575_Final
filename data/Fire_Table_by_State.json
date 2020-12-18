@@ -1,0 +1,5000 @@
+[
+ {
+   "year": 2000,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 771073,
+   "count": 24
+ },
+ {
+   "year": 2001,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 108980,
+   "count": 8
+ },
+ {
+   "year": 2002,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 2117689,
+   "count": 52
+ },
+ {
+   "year": 2003,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 577356,
+   "count": 19
+ },
+ {
+   "year": 2004,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 6568036,
+   "count": 77
+ },
+ {
+   "year": 2005,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 4860738,
+   "count": 109
+ },
+ {
+   "year": 2006,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 270408,
+   "count": 12
+ },
+ {
+   "year": 2007,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 602433,
+   "count": 42
+ },
+ {
+   "year": 2008,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 99956,
+   "count": 12
+ },
+ {
+   "year": 2009,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 2893651,
+   "count": 60
+ },
+ {
+   "year": 2010,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 1054141,
+   "count": 72
+ },
+ {
+   "year": 2011,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 238622,
+   "count": 23
+ },
+ {
+   "year": 2012,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 259338,
+   "count": 26
+ },
+ {
+   "year": 2013,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 1231569,
+   "count": 60
+ },
+ {
+   "year": 2014,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 277816,
+   "count": 7
+ },
+ {
+   "year": 2015,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 4928054,
+   "count": 170
+ },
+ {
+   "year": 2016,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 462190,
+   "count": 43
+ },
+ {
+   "year": 2017,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 711102,
+   "count": 38
+ },
+ {
+   "year": 2018,
+   "state_name": "Alaska",
+   "state_abbr": "AK",
+   "total_ac": 418544,
+   "count": 24
+ },
+ {
+   "year": 2000,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 8923,
+   "count": 8
+ },
+ {
+   "year": 2001,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 2931,
+   "count": 3
+ },
+ {
+   "year": 2002,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 1897,
+   "count": 3
+ },
+ {
+   "year": 2003,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 1278,
+   "count": 1
+ },
+ {
+   "year": 2004,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 4748,
+   "count": 7
+ },
+ {
+   "year": 2005,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 168173,
+   "count": 111
+ },
+ {
+   "year": 2006,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 185266,
+   "count": 123
+ },
+ {
+   "year": 2007,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 13275,
+   "count": 9
+ },
+ {
+   "year": 2008,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 20638,
+   "count": 10
+ },
+ {
+   "year": 2009,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 6004,
+   "count": 3
+ },
+ {
+   "year": 2010,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 39346,
+   "count": 24
+ },
+ {
+   "year": 2011,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 12914,
+   "count": 10
+ },
+ {
+   "year": 2012,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 1422,
+   "count": 1
+ },
+ {
+   "year": 2013,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 55819,
+   "count": 26
+ },
+ {
+   "year": 2014,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 81649,
+   "count": 51
+ },
+ {
+   "year": 2015,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 68110,
+   "count": 50
+ },
+ {
+   "year": 2016,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 64079,
+   "count": 45
+ },
+ {
+   "year": 2017,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 44457,
+   "count": 24
+ },
+ {
+   "year": 2018,
+   "state_name": "Alabama",
+   "state_abbr": "AL",
+   "total_ac": 67633,
+   "count": 50
+ },
+ {
+   "year": 2000,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 23288,
+   "count": 5
+ },
+ {
+   "year": 2001,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 11228,
+   "count": 4
+ },
+ {
+   "year": 2002,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 13396,
+   "count": 7
+ },
+ {
+   "year": 2003,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 110072,
+   "count": 41
+ },
+ {
+   "year": 2004,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 21052,
+   "count": 12
+ },
+ {
+   "year": 2005,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 24225,
+   "count": 12
+ },
+ {
+   "year": 2006,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 119211,
+   "count": 50
+ },
+ {
+   "year": 2007,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 166841,
+   "count": 55
+ },
+ {
+   "year": 2009,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 3622,
+   "count": 3
+ },
+ {
+   "year": 2010,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 85958,
+   "count": 35
+ },
+ {
+   "year": 2011,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 26936,
+   "count": 18
+ },
+ {
+   "year": 2012,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 8177,
+   "count": 8
+ },
+ {
+   "year": 2013,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 107526,
+   "count": 38
+ },
+ {
+   "year": 2014,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 69355,
+   "count": 27
+ },
+ {
+   "year": 2015,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 19823,
+   "count": 13
+ },
+ {
+   "year": 2016,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 141131,
+   "count": 62
+ },
+ {
+   "year": 2017,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 66565,
+   "count": 34
+ },
+ {
+   "year": 2018,
+   "state_name": "Arkansas",
+   "state_abbr": "AR",
+   "total_ac": 89288,
+   "count": 45
+ },
+ {
+   "year": 2000,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 95771,
+   "count": 19
+ },
+ {
+   "year": 2001,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 93221,
+   "count": 24
+ },
+ {
+   "year": 2002,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 616597,
+   "count": 27
+ },
+ {
+   "year": 2003,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 195997,
+   "count": 21
+ },
+ {
+   "year": 2004,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 231478,
+   "count": 22
+ },
+ {
+   "year": 2005,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 912313,
+   "count": 88
+ },
+ {
+   "year": 2006,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 187129,
+   "count": 48
+ },
+ {
+   "year": 2007,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 106648,
+   "count": 23
+ },
+ {
+   "year": 2008,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 134805,
+   "count": 35
+ },
+ {
+   "year": 2009,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 252272,
+   "count": 48
+ },
+ {
+   "year": 2010,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 106901,
+   "count": 30
+ },
+ {
+   "year": 2011,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 1047123,
+   "count": 42
+ },
+ {
+   "year": 2012,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 185025,
+   "count": 28
+ },
+ {
+   "year": 2013,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 111493,
+   "count": 23
+ },
+ {
+   "year": 2014,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 198157,
+   "count": 28
+ },
+ {
+   "year": 2015,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 167345,
+   "count": 33
+ },
+ {
+   "year": 2016,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 296435,
+   "count": 54
+ },
+ {
+   "year": 2017,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 468015,
+   "count": 64
+ },
+ {
+   "year": 2018,
+   "state_name": "Arizona",
+   "state_abbr": "AZ",
+   "total_ac": 172848,
+   "count": 36
+ },
+ {
+   "year": 2000,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 242433,
+   "count": 39
+ },
+ {
+   "year": 2001,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 283557,
+   "count": 41
+ },
+ {
+   "year": 2002,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 467252,
+   "count": 55
+ },
+ {
+   "year": 2003,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 940718,
+   "count": 71
+ },
+ {
+   "year": 2004,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 250258,
+   "count": 42
+ },
+ {
+   "year": 2005,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 268048,
+   "count": 51
+ },
+ {
+   "year": 2006,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 718413,
+   "count": 72
+ },
+ {
+   "year": 2007,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 993888,
+   "count": 51
+ },
+ {
+   "year": 2008,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 1409640,
+   "count": 110
+ },
+ {
+   "year": 2009,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 418465,
+   "count": 43
+ },
+ {
+   "year": 2010,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 94660,
+   "count": 27
+ },
+ {
+   "year": 2011,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 153667,
+   "count": 24
+ },
+ {
+   "year": 2012,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 736902,
+   "count": 42
+ },
+ {
+   "year": 2013,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 541879,
+   "count": 29
+ },
+ {
+   "year": 2014,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 515968,
+   "count": 34
+ },
+ {
+   "year": 2015,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 797290,
+   "count": 49
+ },
+ {
+   "year": 2016,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 539399,
+   "count": 45
+ },
+ {
+   "year": 2017,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 1304172,
+   "count": 78
+ },
+ {
+   "year": 2018,
+   "state_name": "California",
+   "state_abbr": "CA",
+   "total_ac": 1584855,
+   "count": 53
+ },
+ {
+   "year": 2000,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 104016,
+   "count": 23
+ },
+ {
+   "year": 2001,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 35625,
+   "count": 14
+ },
+ {
+   "year": 2002,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 453968,
+   "count": 47
+ },
+ {
+   "year": 2003,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 21779,
+   "count": 12
+ },
+ {
+   "year": 2004,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 24581,
+   "count": 5
+ },
+ {
+   "year": 2005,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 19659,
+   "count": 6
+ },
+ {
+   "year": 2006,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 31108,
+   "count": 8
+ },
+ {
+   "year": 2007,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 10676,
+   "count": 5
+ },
+ {
+   "year": 2008,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 103232,
+   "count": 11
+ },
+ {
+   "year": 2009,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 35431,
+   "count": 12
+ },
+ {
+   "year": 2010,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 28354,
+   "count": 9
+ },
+ {
+   "year": 2011,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 117480,
+   "count": 18
+ },
+ {
+   "year": 2012,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 207703,
+   "count": 15
+ },
+ {
+   "year": 2013,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 132192,
+   "count": 11
+ },
+ {
+   "year": 2014,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 20338,
+   "count": 1
+ },
+ {
+   "year": 2016,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 131411,
+   "count": 16
+ },
+ {
+   "year": 2017,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 103055,
+   "count": 15
+ },
+ {
+   "year": 2018,
+   "state_name": "Colorado",
+   "state_abbr": "CO",
+   "total_ac": 426189,
+   "count": 32
+ },
+ {
+   "year": 2002,
+   "state_name": "Delaware",
+   "state_abbr": "DE",
+   "total_ac": 1228,
+   "count": 1
+ },
+ {
+   "year": 2004,
+   "state_name": "Delaware",
+   "state_abbr": "DE",
+   "total_ac": 1030,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 201120,
+   "count": 100
+ },
+ {
+   "year": 2001,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 301992,
+   "count": 71
+ },
+ {
+   "year": 2002,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 45177,
+   "count": 25
+ },
+ {
+   "year": 2003,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 50103,
+   "count": 32
+ },
+ {
+   "year": 2004,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 389383,
+   "count": 169
+ },
+ {
+   "year": 2005,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 171109,
+   "count": 84
+ },
+ {
+   "year": 2006,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 468033,
+   "count": 187
+ },
+ {
+   "year": 2007,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 779426,
+   "count": 355
+ },
+ {
+   "year": 2008,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 916632,
+   "count": 496
+ },
+ {
+   "year": 2009,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 799400,
+   "count": 444
+ },
+ {
+   "year": 2010,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 680824,
+   "count": 439
+ },
+ {
+   "year": 2011,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 792111,
+   "count": 492
+ },
+ {
+   "year": 2012,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 381440,
+   "count": 215
+ },
+ {
+   "year": 2013,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 217540,
+   "count": 77
+ },
+ {
+   "year": 2014,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 285153,
+   "count": 94
+ },
+ {
+   "year": 2015,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 147962,
+   "count": 77
+ },
+ {
+   "year": 2016,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 141895,
+   "count": 79
+ },
+ {
+   "year": 2017,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 320464,
+   "count": 98
+ },
+ {
+   "year": 2018,
+   "state_name": "Florida",
+   "state_abbr": "FL",
+   "total_ac": 384331,
+   "count": 108
+ },
+ {
+   "year": 2000,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 28667,
+   "count": 13
+ },
+ {
+   "year": 2001,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 27472,
+   "count": 13
+ },
+ {
+   "year": 2002,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 129709,
+   "count": 7
+ },
+ {
+   "year": 2003,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 2334,
+   "count": 2
+ },
+ {
+   "year": 2004,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 33519,
+   "count": 22
+ },
+ {
+   "year": 2005,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 37652,
+   "count": 22
+ },
+ {
+   "year": 2006,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 23295,
+   "count": 17
+ },
+ {
+   "year": 2007,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 655354,
+   "count": 34
+ },
+ {
+   "year": 2008,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 93168,
+   "count": 52
+ },
+ {
+   "year": 2009,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 19360,
+   "count": 14
+ },
+ {
+   "year": 2010,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 32633,
+   "count": 24
+ },
+ {
+   "year": 2011,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 407554,
+   "count": 22
+ },
+ {
+   "year": 2012,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 5869,
+   "count": 5
+ },
+ {
+   "year": 2013,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 18454,
+   "count": 12
+ },
+ {
+   "year": 2014,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 42544,
+   "count": 30
+ },
+ {
+   "year": 2015,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 29475,
+   "count": 23
+ },
+ {
+   "year": 2016,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 90943,
+   "count": 34
+ },
+ {
+   "year": 2017,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 173605,
+   "count": 7
+ },
+ {
+   "year": 2018,
+   "state_name": "Georgia",
+   "state_abbr": "GA",
+   "total_ac": 28212,
+   "count": 21
+ },
+ {
+   "year": 2000,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 3671,
+   "count": 3
+ },
+ {
+   "year": 2002,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 2479,
+   "count": 1
+ },
+ {
+   "year": 2003,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 5405,
+   "count": 2
+ },
+ {
+   "year": 2005,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 20108,
+   "count": 2
+ },
+ {
+   "year": 2007,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 13716,
+   "count": 3
+ },
+ {
+   "year": 2009,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 8355,
+   "count": 1
+ },
+ {
+   "year": 2012,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 2027,
+   "count": 1
+ },
+ {
+   "year": 2015,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 3743,
+   "count": 1
+ },
+ {
+   "year": 2016,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 13093,
+   "count": 3
+ },
+ {
+   "year": 2017,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 1591,
+   "count": 1
+ },
+ {
+   "year": 2018,
+   "state_name": "Hawaii",
+   "state_abbr": "HI",
+   "total_ac": 15617,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "Iowa",
+   "state_abbr": "IA",
+   "total_ac": 756,
+   "count": 1
+ },
+ {
+   "year": 2002,
+   "state_name": "Iowa",
+   "state_abbr": "IA",
+   "total_ac": 1130,
+   "count": 1
+ },
+ {
+   "year": 2005,
+   "state_name": "Iowa",
+   "state_abbr": "IA",
+   "total_ac": 4195,
+   "count": 1
+ },
+ {
+   "year": 2008,
+   "state_name": "Iowa",
+   "state_abbr": "IA",
+   "total_ac": 641,
+   "count": 1
+ },
+ {
+   "year": 2010,
+   "state_name": "Iowa",
+   "state_abbr": "IA",
+   "total_ac": 1415,
+   "count": 2
+ },
+ {
+   "year": 2011,
+   "state_name": "Iowa",
+   "state_abbr": "IA",
+   "total_ac": 1186,
+   "count": 2
+ },
+ {
+   "year": 2016,
+   "state_name": "Iowa",
+   "state_abbr": "IA",
+   "total_ac": 1050,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 1478426,
+   "count": 89
+ },
+ {
+   "year": 2001,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 158765,
+   "count": 34
+ },
+ {
+   "year": 2002,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 88299,
+   "count": 22
+ },
+ {
+   "year": 2003,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 311292,
+   "count": 55
+ },
+ {
+   "year": 2004,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 20569,
+   "count": 9
+ },
+ {
+   "year": 2005,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 632339,
+   "count": 64
+ },
+ {
+   "year": 2006,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 874407,
+   "count": 82
+ },
+ {
+   "year": 2007,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 2258653,
+   "count": 83
+ },
+ {
+   "year": 2008,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 147540,
+   "count": 25
+ },
+ {
+   "year": 2009,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 11900,
+   "count": 7
+ },
+ {
+   "year": 2010,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 632532,
+   "count": 47
+ },
+ {
+   "year": 2011,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 376350,
+   "count": 40
+ },
+ {
+   "year": 2012,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 1807641,
+   "count": 77
+ },
+ {
+   "year": 2013,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 730775,
+   "count": 48
+ },
+ {
+   "year": 2014,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 184329,
+   "count": 21
+ },
+ {
+   "year": 2015,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 775249,
+   "count": 62
+ },
+ {
+   "year": 2016,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 364722,
+   "count": 30
+ },
+ {
+   "year": 2017,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 672668,
+   "count": 57
+ },
+ {
+   "year": 2018,
+   "state_name": "Idaho",
+   "state_abbr": "ID",
+   "total_ac": 564726,
+   "count": 53
+ },
+ {
+   "year": 2010,
+   "state_name": "Illinois",
+   "state_abbr": "IL",
+   "total_ac": 687,
+   "count": 1
+ },
+ {
+   "year": 2013,
+   "state_name": "Illinois",
+   "state_abbr": "IL",
+   "total_ac": 1854,
+   "count": 2
+ },
+ {
+   "year": 2014,
+   "state_name": "Illinois",
+   "state_abbr": "IL",
+   "total_ac": 4914,
+   "count": 4
+ },
+ {
+   "year": 2015,
+   "state_name": "Illinois",
+   "state_abbr": "IL",
+   "total_ac": 2455,
+   "count": 2
+ },
+ {
+   "year": 2016,
+   "state_name": "Illinois",
+   "state_abbr": "IL",
+   "total_ac": 2369,
+   "count": 3
+ },
+ {
+   "year": 2017,
+   "state_name": "Illinois",
+   "state_abbr": "IL",
+   "total_ac": 2800,
+   "count": 3
+ },
+ {
+   "year": 2018,
+   "state_name": "Illinois",
+   "state_abbr": "IL",
+   "total_ac": 724,
+   "count": 1
+ },
+ {
+   "year": 2001,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 2361,
+   "count": 1
+ },
+ {
+   "year": 2002,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 707,
+   "count": 1
+ },
+ {
+   "year": 2003,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 7840,
+   "count": 4
+ },
+ {
+   "year": 2004,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 669,
+   "count": 1
+ },
+ {
+   "year": 2005,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 7565,
+   "count": 2
+ },
+ {
+   "year": 2007,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 7323,
+   "count": 4
+ },
+ {
+   "year": 2008,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 2695,
+   "count": 2
+ },
+ {
+   "year": 2009,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 1438,
+   "count": 2
+ },
+ {
+   "year": 2010,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 8429,
+   "count": 8
+ },
+ {
+   "year": 2011,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 2215,
+   "count": 1
+ },
+ {
+   "year": 2013,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 934,
+   "count": 1
+ },
+ {
+   "year": 2014,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 910,
+   "count": 1
+ },
+ {
+   "year": 2016,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 898,
+   "count": 1
+ },
+ {
+   "year": 2017,
+   "state_name": "Indiana",
+   "state_abbr": "IN",
+   "total_ac": 1858,
+   "count": 2
+ },
+ {
+   "year": 2000,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 30942,
+   "count": 7
+ },
+ {
+   "year": 2001,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 10592,
+   "count": 2
+ },
+ {
+   "year": 2002,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 89310,
+   "count": 17
+ },
+ {
+   "year": 2003,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 100880,
+   "count": 21
+ },
+ {
+   "year": 2004,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 21650,
+   "count": 5
+ },
+ {
+   "year": 2005,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 6922,
+   "count": 2
+ },
+ {
+   "year": 2006,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 39977,
+   "count": 10
+ },
+ {
+   "year": 2007,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 220369,
+   "count": 18
+ },
+ {
+   "year": 2008,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 67785,
+   "count": 22
+ },
+ {
+   "year": 2009,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 781372,
+   "count": 6
+ },
+ {
+   "year": 2010,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 25315,
+   "count": 6
+ },
+ {
+   "year": 2011,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 1393104,
+   "count": 324
+ },
+ {
+   "year": 2012,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 164503,
+   "count": 64
+ },
+ {
+   "year": 2013,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 55122,
+   "count": 21
+ },
+ {
+   "year": 2014,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 1744914,
+   "count": 267
+ },
+ {
+   "year": 2015,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 1111950,
+   "count": 240
+ },
+ {
+   "year": 2016,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 1994858,
+   "count": 298
+ },
+ {
+   "year": 2017,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 2094987,
+   "count": 305
+ },
+ {
+   "year": 2018,
+   "state_name": "Kansas",
+   "state_abbr": "KS",
+   "total_ac": 476675,
+   "count": 119
+ },
+ {
+   "year": 2000,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 46510,
+   "count": 31
+ },
+ {
+   "year": 2001,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 126051,
+   "count": 42
+ },
+ {
+   "year": 2002,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 4531,
+   "count": 3
+ },
+ {
+   "year": 2003,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 627,
+   "count": 1
+ },
+ {
+   "year": 2004,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 1770,
+   "count": 1
+ },
+ {
+   "year": 2005,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 9132,
+   "count": 10
+ },
+ {
+   "year": 2006,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 13608,
+   "count": 15
+ },
+ {
+   "year": 2007,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 10879,
+   "count": 12
+ },
+ {
+   "year": 2008,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 5997,
+   "count": 4
+ },
+ {
+   "year": 2009,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 6135,
+   "count": 6
+ },
+ {
+   "year": 2010,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 25542,
+   "count": 18
+ },
+ {
+   "year": 2011,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 2350,
+   "count": 2
+ },
+ {
+   "year": 2012,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 4120,
+   "count": 4
+ },
+ {
+   "year": 2013,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 8118,
+   "count": 5
+ },
+ {
+   "year": 2014,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 1639,
+   "count": 2
+ },
+ {
+   "year": 2015,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 5386,
+   "count": 4
+ },
+ {
+   "year": 2016,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 34342,
+   "count": 25
+ },
+ {
+   "year": 2017,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 2199,
+   "count": 3
+ },
+ {
+   "year": 2018,
+   "state_name": "Kentucky",
+   "state_abbr": "KY",
+   "total_ac": 5475,
+   "count": 4
+ },
+ {
+   "year": 2000,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 44760,
+   "count": 18
+ },
+ {
+   "year": 2001,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 16730,
+   "count": 9
+ },
+ {
+   "year": 2002,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 30635,
+   "count": 11
+ },
+ {
+   "year": 2003,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 65315,
+   "count": 27
+ },
+ {
+   "year": 2004,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 23174,
+   "count": 9
+ },
+ {
+   "year": 2005,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 83948,
+   "count": 24
+ },
+ {
+   "year": 2006,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 28335,
+   "count": 17
+ },
+ {
+   "year": 2007,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 14526,
+   "count": 2
+ },
+ {
+   "year": 2008,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 8144,
+   "count": 5
+ },
+ {
+   "year": 2009,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 22500,
+   "count": 11
+ },
+ {
+   "year": 2010,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 122565,
+   "count": 75
+ },
+ {
+   "year": 2011,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 41790,
+   "count": 10
+ },
+ {
+   "year": 2012,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 3520,
+   "count": 3
+ },
+ {
+   "year": 2013,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 95210,
+   "count": 54
+ },
+ {
+   "year": 2014,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 56919,
+   "count": 37
+ },
+ {
+   "year": 2015,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 61600,
+   "count": 50
+ },
+ {
+   "year": 2016,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 83213,
+   "count": 58
+ },
+ {
+   "year": 2017,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 91521,
+   "count": 57
+ },
+ {
+   "year": 2018,
+   "state_name": "Louisiana",
+   "state_abbr": "LA",
+   "total_ac": 83199,
+   "count": 58
+ },
+ {
+   "year": 2005,
+   "state_name": "Massachusetts",
+   "state_abbr": "MA",
+   "total_ac": 760,
+   "count": 1
+ },
+ {
+   "year": 2008,
+   "state_name": "Massachusetts",
+   "state_abbr": "MA",
+   "total_ac": 546,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 814,
+   "count": 1
+ },
+ {
+   "year": 2001,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 594,
+   "count": 1
+ },
+ {
+   "year": 2002,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 697,
+   "count": 1
+ },
+ {
+   "year": 2004,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 11850,
+   "count": 5
+ },
+ {
+   "year": 2005,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 13231,
+   "count": 8
+ },
+ {
+   "year": 2006,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 2299,
+   "count": 2
+ },
+ {
+   "year": 2007,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 6270,
+   "count": 4
+ },
+ {
+   "year": 2008,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 719,
+   "count": 1
+ },
+ {
+   "year": 2009,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 5084,
+   "count": 2
+ },
+ {
+   "year": 2011,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 10064,
+   "count": 5
+ },
+ {
+   "year": 2012,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 735,
+   "count": 1
+ },
+ {
+   "year": 2014,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 5433,
+   "count": 1
+ },
+ {
+   "year": 2017,
+   "state_name": "Maryland",
+   "state_abbr": "MD",
+   "total_ac": 7743,
+   "count": 1
+ },
+ {
+   "year": 2001,
+   "state_name": "Maine",
+   "state_abbr": "ME",
+   "total_ac": 627,
+   "count": 1
+ },
+ {
+   "year": 2006,
+   "state_name": "Maine",
+   "state_abbr": "ME",
+   "total_ac": 705,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 5266,
+   "count": 1
+ },
+ {
+   "year": 2003,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 800,
+   "count": 1
+ },
+ {
+   "year": 2004,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 1977,
+   "count": 1
+ },
+ {
+   "year": 2005,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 2109,
+   "count": 1
+ },
+ {
+   "year": 2006,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 12270,
+   "count": 5
+ },
+ {
+   "year": 2007,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 20424,
+   "count": 4
+ },
+ {
+   "year": 2008,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 2179,
+   "count": 2
+ },
+ {
+   "year": 2009,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 4195,
+   "count": 3
+ },
+ {
+   "year": 2010,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 9756,
+   "count": 3
+ },
+ {
+   "year": 2011,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 2757,
+   "count": 2
+ },
+ {
+   "year": 2012,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 22359,
+   "count": 2
+ },
+ {
+   "year": 2014,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 3759,
+   "count": 1
+ },
+ {
+   "year": 2015,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 4386,
+   "count": 4
+ },
+ {
+   "year": 2016,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 4541,
+   "count": 4
+ },
+ {
+   "year": 2017,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 3761,
+   "count": 2
+ },
+ {
+   "year": 2018,
+   "state_name": "Michigan",
+   "state_abbr": "MI",
+   "total_ac": 5731,
+   "count": 4
+ },
+ {
+   "year": 2000,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 55009,
+   "count": 25
+ },
+ {
+   "year": 2001,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 4751,
+   "count": 4
+ },
+ {
+   "year": 2002,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 34005,
+   "count": 22
+ },
+ {
+   "year": 2003,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 122723,
+   "count": 26
+ },
+ {
+   "year": 2004,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 27278,
+   "count": 15
+ },
+ {
+   "year": 2005,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 24198,
+   "count": 8
+ },
+ {
+   "year": 2006,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 51534,
+   "count": 15
+ },
+ {
+   "year": 2007,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 90722,
+   "count": 34
+ },
+ {
+   "year": 2008,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 20282,
+   "count": 10
+ },
+ {
+   "year": 2009,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 35482,
+   "count": 19
+ },
+ {
+   "year": 2010,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 23758,
+   "count": 17
+ },
+ {
+   "year": 2011,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 118946,
+   "count": 6
+ },
+ {
+   "year": 2012,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 20112,
+   "count": 11
+ },
+ {
+   "year": 2013,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 5653,
+   "count": 3
+ },
+ {
+   "year": 2015,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 11921,
+   "count": 5
+ },
+ {
+   "year": 2016,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 11201,
+   "count": 4
+ },
+ {
+   "year": 2018,
+   "state_name": "Minnesota",
+   "state_abbr": "MN",
+   "total_ac": 33945,
+   "count": 6
+ },
+ {
+   "year": 2000,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 11114,
+   "count": 10
+ },
+ {
+   "year": 2001,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 649,
+   "count": 1
+ },
+ {
+   "year": 2002,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 4030,
+   "count": 3
+ },
+ {
+   "year": 2003,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 3985,
+   "count": 4
+ },
+ {
+   "year": 2004,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 10345,
+   "count": 7
+ },
+ {
+   "year": 2005,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 26842,
+   "count": 16
+ },
+ {
+   "year": 2006,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 22402,
+   "count": 14
+ },
+ {
+   "year": 2007,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 21050,
+   "count": 13
+ },
+ {
+   "year": 2009,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 13157,
+   "count": 7
+ },
+ {
+   "year": 2010,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 28518,
+   "count": 12
+ },
+ {
+   "year": 2011,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 37515,
+   "count": 20
+ },
+ {
+   "year": 2012,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 25133,
+   "count": 12
+ },
+ {
+   "year": 2013,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 18901,
+   "count": 13
+ },
+ {
+   "year": 2014,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 9212,
+   "count": 7
+ },
+ {
+   "year": 2015,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 15711,
+   "count": 9
+ },
+ {
+   "year": 2016,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 15970,
+   "count": 9
+ },
+ {
+   "year": 2017,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 10046,
+   "count": 5
+ },
+ {
+   "year": 2018,
+   "state_name": "Missouri",
+   "state_abbr": "MO",
+   "total_ac": 13338,
+   "count": 10
+ },
+ {
+   "year": 2000,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 16583,
+   "count": 12
+ },
+ {
+   "year": 2001,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 7411,
+   "count": 6
+ },
+ {
+   "year": 2002,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 2499,
+   "count": 3
+ },
+ {
+   "year": 2003,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 2352,
+   "count": 3
+ },
+ {
+   "year": 2004,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 2555,
+   "count": 4
+ },
+ {
+   "year": 2005,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 68534,
+   "count": 26
+ },
+ {
+   "year": 2006,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 44732,
+   "count": 33
+ },
+ {
+   "year": 2007,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 12400,
+   "count": 10
+ },
+ {
+   "year": 2008,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 112719,
+   "count": 48
+ },
+ {
+   "year": 2009,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 3677,
+   "count": 4
+ },
+ {
+   "year": 2010,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 162452,
+   "count": 73
+ },
+ {
+   "year": 2011,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 12230,
+   "count": 12
+ },
+ {
+   "year": 2012,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 3341,
+   "count": 4
+ },
+ {
+   "year": 2013,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 127829,
+   "count": 69
+ },
+ {
+   "year": 2014,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 163886,
+   "count": 80
+ },
+ {
+   "year": 2015,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 68970,
+   "count": 47
+ },
+ {
+   "year": 2016,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 88082,
+   "count": 70
+ },
+ {
+   "year": 2017,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 51944,
+   "count": 29
+ },
+ {
+   "year": 2018,
+   "state_name": "Mississippi",
+   "state_abbr": "MS",
+   "total_ac": 118567,
+   "count": 78
+ },
+ {
+   "year": 2000,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 751015,
+   "count": 55
+ },
+ {
+   "year": 2001,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 149083,
+   "count": 16
+ },
+ {
+   "year": 2002,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 101148,
+   "count": 8
+ },
+ {
+   "year": 2003,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 759899,
+   "count": 63
+ },
+ {
+   "year": 2004,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 13963,
+   "count": 7
+ },
+ {
+   "year": 2005,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 94937,
+   "count": 23
+ },
+ {
+   "year": 2006,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 787088,
+   "count": 50
+ },
+ {
+   "year": 2007,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 642505,
+   "count": 44
+ },
+ {
+   "year": 2008,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 145701,
+   "count": 13
+ },
+ {
+   "year": 2009,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 41260,
+   "count": 10
+ },
+ {
+   "year": 2010,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 42092,
+   "count": 6
+ },
+ {
+   "year": 2011,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 132459,
+   "count": 21
+ },
+ {
+   "year": 2012,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 928406,
+   "count": 69
+ },
+ {
+   "year": 2013,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 68181,
+   "count": 12
+ },
+ {
+   "year": 2014,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 25451,
+   "count": 10
+ },
+ {
+   "year": 2015,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 314237,
+   "count": 43
+ },
+ {
+   "year": 2016,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 72093,
+   "count": 17
+ },
+ {
+   "year": 2017,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 1189804,
+   "count": 70
+ },
+ {
+   "year": 2018,
+   "state_name": "Montana",
+   "state_abbr": "MT",
+   "total_ac": 100195,
+   "count": 24
+ },
+ {
+   "year": 2000,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 25137,
+   "count": 9
+ },
+ {
+   "year": 2001,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 12644,
+   "count": 5
+ },
+ {
+   "year": 2002,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 8091,
+   "count": 7
+ },
+ {
+   "year": 2003,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 7727,
+   "count": 5
+ },
+ {
+   "year": 2004,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 7072,
+   "count": 7
+ },
+ {
+   "year": 2005,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 9074,
+   "count": 5
+ },
+ {
+   "year": 2006,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 19476,
+   "count": 14
+ },
+ {
+   "year": 2007,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 31990,
+   "count": 20
+ },
+ {
+   "year": 2008,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 51876,
+   "count": 9
+ },
+ {
+   "year": 2009,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 24871,
+   "count": 16
+ },
+ {
+   "year": 2010,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 19009,
+   "count": 18
+ },
+ {
+   "year": 2011,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 78903,
+   "count": 9
+ },
+ {
+   "year": 2012,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 3550,
+   "count": 4
+ },
+ {
+   "year": 2013,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 8041,
+   "count": 7
+ },
+ {
+   "year": 2014,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 7564,
+   "count": 6
+ },
+ {
+   "year": 2015,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 13788,
+   "count": 11
+ },
+ {
+   "year": 2016,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 95734,
+   "count": 27
+ },
+ {
+   "year": 2017,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 15503,
+   "count": 11
+ },
+ {
+   "year": 2018,
+   "state_name": "North Carolina",
+   "state_abbr": "NC",
+   "total_ac": 6842,
+   "count": 8
+ },
+ {
+   "year": 2000,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 8387,
+   "count": 4
+ },
+ {
+   "year": 2001,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 1173,
+   "count": 1
+ },
+ {
+   "year": 2002,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 35800,
+   "count": 5
+ },
+ {
+   "year": 2003,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 9815,
+   "count": 3
+ },
+ {
+   "year": 2004,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 8872,
+   "count": 3
+ },
+ {
+   "year": 2005,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 14481,
+   "count": 4
+ },
+ {
+   "year": 2006,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 16959,
+   "count": 6
+ },
+ {
+   "year": 2007,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 4655,
+   "count": 3
+ },
+ {
+   "year": 2008,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 6069,
+   "count": 3
+ },
+ {
+   "year": 2009,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 4543,
+   "count": 3
+ },
+ {
+   "year": 2010,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 1333,
+   "count": 1
+ },
+ {
+   "year": 2011,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 1363,
+   "count": 1
+ },
+ {
+   "year": 2012,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 12457,
+   "count": 3
+ },
+ {
+   "year": 2014,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 2471,
+   "count": 1
+ },
+ {
+   "year": 2015,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 14882,
+   "count": 4
+ },
+ {
+   "year": 2016,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 2930,
+   "count": 2
+ },
+ {
+   "year": 2017,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 12081,
+   "count": 5
+ },
+ {
+   "year": 2018,
+   "state_name": "North Dakota",
+   "state_abbr": "ND",
+   "total_ac": 9052,
+   "count": 2
+ },
+ {
+   "year": 2000,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 110263,
+   "count": 16
+ },
+ {
+   "year": 2001,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 5449,
+   "count": 2
+ },
+ {
+   "year": 2002,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 35789,
+   "count": 8
+ },
+ {
+   "year": 2003,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 1048,
+   "count": 1
+ },
+ {
+   "year": 2004,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 2486,
+   "count": 1
+ },
+ {
+   "year": 2005,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 1227,
+   "count": 1
+ },
+ {
+   "year": 2006,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 75450,
+   "count": 4
+ },
+ {
+   "year": 2007,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 4907,
+   "count": 2
+ },
+ {
+   "year": 2008,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 1861,
+   "count": 1
+ },
+ {
+   "year": 2010,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 2686,
+   "count": 1
+ },
+ {
+   "year": 2011,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 16944,
+   "count": 5
+ },
+ {
+   "year": 2012,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 333334,
+   "count": 21
+ },
+ {
+   "year": 2015,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 1805,
+   "count": 1
+ },
+ {
+   "year": 2017,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 2267,
+   "count": 1
+ },
+ {
+   "year": 2018,
+   "state_name": "Nebraska",
+   "state_abbr": "NE",
+   "total_ac": 5624,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 1664,
+   "count": 2
+ },
+ {
+   "year": 2001,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 6480,
+   "count": 7
+ },
+ {
+   "year": 2002,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 6642,
+   "count": 5
+ },
+ {
+   "year": 2003,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 2068,
+   "count": 2
+ },
+ {
+   "year": 2004,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 4588,
+   "count": 5
+ },
+ {
+   "year": 2006,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 5541,
+   "count": 3
+ },
+ {
+   "year": 2007,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 18020,
+   "count": 2
+ },
+ {
+   "year": 2008,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 1814,
+   "count": 1
+ },
+ {
+   "year": 2010,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 6079,
+   "count": 6
+ },
+ {
+   "year": 2012,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 666,
+   "count": 1
+ },
+ {
+   "year": 2014,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 2838,
+   "count": 3
+ },
+ {
+   "year": 2015,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 1633,
+   "count": 2
+ },
+ {
+   "year": 2017,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 4189,
+   "count": 2
+ },
+ {
+   "year": 2018,
+   "state_name": "New Jersey",
+   "state_abbr": "NJ",
+   "total_ac": 827,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 403487,
+   "count": 55
+ },
+ {
+   "year": 2001,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 72705,
+   "count": 19
+ },
+ {
+   "year": 2002,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 270195,
+   "count": 21
+ },
+ {
+   "year": 2003,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 250971,
+   "count": 18
+ },
+ {
+   "year": 2004,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 92197,
+   "count": 8
+ },
+ {
+   "year": 2005,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 169445,
+   "count": 15
+ },
+ {
+   "year": 2006,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 485049,
+   "count": 55
+ },
+ {
+   "year": 2007,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 65298,
+   "count": 22
+ },
+ {
+   "year": 2008,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 314221,
+   "count": 53
+ },
+ {
+   "year": 2009,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 432544,
+   "count": 44
+ },
+ {
+   "year": 2010,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 104452,
+   "count": 24
+ },
+ {
+   "year": 2011,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 1072311,
+   "count": 91
+ },
+ {
+   "year": 2012,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 359656,
+   "count": 6
+ },
+ {
+   "year": 2013,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 175538,
+   "count": 5
+ },
+ {
+   "year": 2014,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 40592,
+   "count": 10
+ },
+ {
+   "year": 2015,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 44490,
+   "count": 9
+ },
+ {
+   "year": 2016,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 159766,
+   "count": 34
+ },
+ {
+   "year": 2017,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 165602,
+   "count": 31
+ },
+ {
+   "year": 2018,
+   "state_name": "New Mexico",
+   "state_abbr": "NM",
+   "total_ac": 325764,
+   "count": 32
+ },
+ {
+   "year": 2000,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 603956,
+   "count": 56
+ },
+ {
+   "year": 2001,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 608647,
+   "count": 50
+ },
+ {
+   "year": 2002,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 41075,
+   "count": 13
+ },
+ {
+   "year": 2003,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 14358,
+   "count": 6
+ },
+ {
+   "year": 2004,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 34200,
+   "count": 10
+ },
+ {
+   "year": 2005,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 1061800,
+   "count": 39
+ },
+ {
+   "year": 2006,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 1331294,
+   "count": 90
+ },
+ {
+   "year": 2007,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 789889,
+   "count": 44
+ },
+ {
+   "year": 2008,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 73251,
+   "count": 9
+ },
+ {
+   "year": 2009,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 27936,
+   "count": 5
+ },
+ {
+   "year": 2010,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 16350,
+   "count": 5
+ },
+ {
+   "year": 2011,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 424083,
+   "count": 35
+ },
+ {
+   "year": 2012,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 431074,
+   "count": 43
+ },
+ {
+   "year": 2013,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 164186,
+   "count": 21
+ },
+ {
+   "year": 2014,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 68608,
+   "count": 8
+ },
+ {
+   "year": 2015,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 19741,
+   "count": 5
+ },
+ {
+   "year": 2016,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 259129,
+   "count": 24
+ },
+ {
+   "year": 2017,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 1099528,
+   "count": 65
+ },
+ {
+   "year": 2018,
+   "state_name": "Nevada",
+   "state_abbr": "NV",
+   "total_ac": 932239,
+   "count": 34
+ },
+ {
+   "year": 2006,
+   "state_name": "New York",
+   "state_abbr": "NY",
+   "total_ac": 943,
+   "count": 1
+ },
+ {
+   "year": 2008,
+   "state_name": "New York",
+   "state_abbr": "NY",
+   "total_ac": 2224,
+   "count": 1
+ },
+ {
+   "year": 2010,
+   "state_name": "New York",
+   "state_abbr": "NY",
+   "total_ac": 1018,
+   "count": 1
+ },
+ {
+   "year": 2012,
+   "state_name": "New York",
+   "state_abbr": "NY",
+   "total_ac": 1068,
+   "count": 1
+ },
+ {
+   "year": 2015,
+   "state_name": "New York",
+   "state_abbr": "NY",
+   "total_ac": 2747,
+   "count": 1
+ },
+ {
+   "year": 2016,
+   "state_name": "New York",
+   "state_abbr": "NY",
+   "total_ac": 2571,
+   "count": 2
+ },
+ {
+   "year": 2018,
+   "state_name": "New York",
+   "state_abbr": "NY",
+   "total_ac": 658,
+   "count": 1
+ },
+ {
+   "year": 2003,
+   "state_name": "Ohio",
+   "state_abbr": "OH",
+   "total_ac": 1043,
+   "count": 1
+ },
+ {
+   "year": 2009,
+   "state_name": "Ohio",
+   "state_abbr": "OH",
+   "total_ac": 3259,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 68041,
+   "count": 20
+ },
+ {
+   "year": 2001,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 28573,
+   "count": 8
+ },
+ {
+   "year": 2002,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 27573,
+   "count": 10
+ },
+ {
+   "year": 2003,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 89654,
+   "count": 23
+ },
+ {
+   "year": 2004,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 147276,
+   "count": 27
+ },
+ {
+   "year": 2005,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 249600,
+   "count": 64
+ },
+ {
+   "year": 2006,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 206504,
+   "count": 55
+ },
+ {
+   "year": 2007,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 111222,
+   "count": 17
+ },
+ {
+   "year": 2008,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 113874,
+   "count": 37
+ },
+ {
+   "year": 2009,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 1112193,
+   "count": 39
+ },
+ {
+   "year": 2010,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 47443,
+   "count": 22
+ },
+ {
+   "year": 2011,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 726316,
+   "count": 141
+ },
+ {
+   "year": 2012,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 182196,
+   "count": 40
+ },
+ {
+   "year": 2013,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 34592,
+   "count": 13
+ },
+ {
+   "year": 2014,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 533961,
+   "count": 91
+ },
+ {
+   "year": 2015,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 493060,
+   "count": 84
+ },
+ {
+   "year": 2016,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 688496,
+   "count": 118
+ },
+ {
+   "year": 2017,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 316997,
+   "count": 63
+ },
+ {
+   "year": 2018,
+   "state_name": "Oklahoma",
+   "state_abbr": "OK",
+   "total_ac": 723295,
+   "count": 74
+ },
+ {
+   "year": 2000,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 335566,
+   "count": 33
+ },
+ {
+   "year": 2001,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 424895,
+   "count": 43
+ },
+ {
+   "year": 2002,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 1010750,
+   "count": 44
+ },
+ {
+   "year": 2003,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 148344,
+   "count": 12
+ },
+ {
+   "year": 2004,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 42719,
+   "count": 10
+ },
+ {
+   "year": 2005,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 146774,
+   "count": 28
+ },
+ {
+   "year": 2006,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 468625,
+   "count": 43
+ },
+ {
+   "year": 2007,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 581678,
+   "count": 40
+ },
+ {
+   "year": 2008,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 203012,
+   "count": 27
+ },
+ {
+   "year": 2009,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 116038,
+   "count": 16
+ },
+ {
+   "year": 2010,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 109783,
+   "count": 23
+ },
+ {
+   "year": 2011,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 295058,
+   "count": 33
+ },
+ {
+   "year": 2012,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 1506483,
+   "count": 27
+ },
+ {
+   "year": 2013,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 336269,
+   "count": 32
+ },
+ {
+   "year": 2014,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 918724,
+   "count": 57
+ },
+ {
+   "year": 2015,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 582963,
+   "count": 28
+ },
+ {
+   "year": 2016,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 200037,
+   "count": 19
+ },
+ {
+   "year": 2017,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 735609,
+   "count": 55
+ },
+ {
+   "year": 2018,
+   "state_name": "Oregon",
+   "state_abbr": "OR",
+   "total_ac": 792816,
+   "count": 41
+ },
+ {
+   "year": 2004,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 1838,
+   "count": 1
+ },
+ {
+   "year": 2005,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 510,
+   "count": 1
+ },
+ {
+   "year": 2006,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 1794,
+   "count": 3
+ },
+ {
+   "year": 2008,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 2003,
+   "count": 1
+ },
+ {
+   "year": 2009,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 2848,
+   "count": 2
+ },
+ {
+   "year": 2012,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 812,
+   "count": 1
+ },
+ {
+   "year": 2014,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 945,
+   "count": 1
+ },
+ {
+   "year": 2015,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 1394,
+   "count": 2
+ },
+ {
+   "year": 2016,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 8545,
+   "count": 2
+ },
+ {
+   "year": 2018,
+   "state_name": "Pennsylvania",
+   "state_abbr": "PA",
+   "total_ac": 711,
+   "count": 1
+ },
+ {
+   "year": 2005,
+   "state_name": "Puerto Rico",
+   "state_abbr": "PR",
+   "total_ac": 7677,
+   "count": 4
+ },
+ {
+   "year": 2007,
+   "state_name": "Puerto Rico",
+   "state_abbr": "PR",
+   "total_ac": 4502,
+   "count": 2
+ },
+ {
+   "year": 2013,
+   "state_name": "Puerto Rico",
+   "state_abbr": "PR",
+   "total_ac": 631,
+   "count": 1
+ },
+ {
+   "year": 2001,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 6949,
+   "count": 4
+ },
+ {
+   "year": 2002,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 12622,
+   "count": 11
+ },
+ {
+   "year": 2003,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 6296,
+   "count": 4
+ },
+ {
+   "year": 2004,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 26018,
+   "count": 21
+ },
+ {
+   "year": 2005,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 27457,
+   "count": 9
+ },
+ {
+   "year": 2006,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 5085,
+   "count": 6
+ },
+ {
+   "year": 2007,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 12867,
+   "count": 10
+ },
+ {
+   "year": 2008,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 122727,
+   "count": 101
+ },
+ {
+   "year": 2009,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 149063,
+   "count": 96
+ },
+ {
+   "year": 2010,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 123357,
+   "count": 78
+ },
+ {
+   "year": 2011,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 9630,
+   "count": 10
+ },
+ {
+   "year": 2012,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 5509,
+   "count": 5
+ },
+ {
+   "year": 2013,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 17722,
+   "count": 13
+ },
+ {
+   "year": 2014,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 47786,
+   "count": 32
+ },
+ {
+   "year": 2015,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 32471,
+   "count": 22
+ },
+ {
+   "year": 2016,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 58069,
+   "count": 35
+ },
+ {
+   "year": 2017,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 51004,
+   "count": 30
+ },
+ {
+   "year": 2018,
+   "state_name": "South Carolina",
+   "state_abbr": "SC",
+   "total_ac": 52980,
+   "count": 46
+ },
+ {
+   "year": 2000,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 195604,
+   "count": 31
+ },
+ {
+   "year": 2001,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 38398,
+   "count": 10
+ },
+ {
+   "year": 2002,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 76806,
+   "count": 16
+ },
+ {
+   "year": 2003,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 36475,
+   "count": 10
+ },
+ {
+   "year": 2004,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 6920,
+   "count": 3
+ },
+ {
+   "year": 2005,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 18186,
+   "count": 10
+ },
+ {
+   "year": 2006,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 79563,
+   "count": 19
+ },
+ {
+   "year": 2007,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 51536,
+   "count": 11
+ },
+ {
+   "year": 2008,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 5437,
+   "count": 2
+ },
+ {
+   "year": 2009,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 4211,
+   "count": 3
+ },
+ {
+   "year": 2010,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 5302,
+   "count": 2
+ },
+ {
+   "year": 2011,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 26165,
+   "count": 6
+ },
+ {
+   "year": 2012,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 107770,
+   "count": 11
+ },
+ {
+   "year": 2013,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 11733,
+   "count": 1
+ },
+ {
+   "year": 2014,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 4479,
+   "count": 3
+ },
+ {
+   "year": 2015,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 25014,
+   "count": 4
+ },
+ {
+   "year": 2016,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 82674,
+   "count": 8
+ },
+ {
+   "year": 2017,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 65062,
+   "count": 5
+ },
+ {
+   "year": 2018,
+   "state_name": "South Dakota",
+   "state_abbr": "SD",
+   "total_ac": 2179,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 42750,
+   "count": 25
+ },
+ {
+   "year": 2001,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 34506,
+   "count": 24
+ },
+ {
+   "year": 2003,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 15337,
+   "count": 12
+ },
+ {
+   "year": 2004,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 4062,
+   "count": 4
+ },
+ {
+   "year": 2005,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 6281,
+   "count": 5
+ },
+ {
+   "year": 2006,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 5657,
+   "count": 7
+ },
+ {
+   "year": 2007,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 16071,
+   "count": 14
+ },
+ {
+   "year": 2008,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 5092,
+   "count": 6
+ },
+ {
+   "year": 2009,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 7346,
+   "count": 4
+ },
+ {
+   "year": 2010,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 13493,
+   "count": 8
+ },
+ {
+   "year": 2011,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 970,
+   "count": 1
+ },
+ {
+   "year": 2012,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 2875,
+   "count": 3
+ },
+ {
+   "year": 2013,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 14916,
+   "count": 9
+ },
+ {
+   "year": 2014,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 12410,
+   "count": 9
+ },
+ {
+   "year": 2015,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 1402,
+   "count": 2
+ },
+ {
+   "year": 2016,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 56270,
+   "count": 22
+ },
+ {
+   "year": 2017,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 1080,
+   "count": 1
+ },
+ {
+   "year": 2018,
+   "state_name": "Tennessee",
+   "state_abbr": "TN",
+   "total_ac": 6432,
+   "count": 6
+ },
+ {
+   "year": 2000,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 123966,
+   "count": 27
+ },
+ {
+   "year": 2001,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 86609,
+   "count": 24
+ },
+ {
+   "year": 2002,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 26505,
+   "count": 11
+ },
+ {
+   "year": 2003,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 68801,
+   "count": 20
+ },
+ {
+   "year": 2004,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 45977,
+   "count": 22
+ },
+ {
+   "year": 2005,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 141566,
+   "count": 49
+ },
+ {
+   "year": 2006,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 1075481,
+   "count": 99
+ },
+ {
+   "year": 2007,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 73017,
+   "count": 29
+ },
+ {
+   "year": 2008,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 889544,
+   "count": 114
+ },
+ {
+   "year": 2009,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 330177,
+   "count": 82
+ },
+ {
+   "year": 2010,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 236440,
+   "count": 76
+ },
+ {
+   "year": 2011,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 2774734,
+   "count": 233
+ },
+ {
+   "year": 2012,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 106679,
+   "count": 23
+ },
+ {
+   "year": 2013,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 70194,
+   "count": 28
+ },
+ {
+   "year": 2014,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 129849,
+   "count": 39
+ },
+ {
+   "year": 2015,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 116859,
+   "count": 31
+ },
+ {
+   "year": 2016,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 199733,
+   "count": 52
+ },
+ {
+   "year": 2017,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 608997,
+   "count": 58
+ },
+ {
+   "year": 2018,
+   "state_name": "Texas",
+   "state_abbr": "TX",
+   "total_ac": 336766,
+   "count": 66
+ },
+ {
+   "year": 2000,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 197587,
+   "count": 29
+ },
+ {
+   "year": 2001,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 123192,
+   "count": 25
+ },
+ {
+   "year": 2002,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 268329,
+   "count": 26
+ },
+ {
+   "year": 2003,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 101672,
+   "count": 14
+ },
+ {
+   "year": 2004,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 83682,
+   "count": 14
+ },
+ {
+   "year": 2005,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 248061,
+   "count": 32
+ },
+ {
+   "year": 2006,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 315653,
+   "count": 47
+ },
+ {
+   "year": 2007,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 590874,
+   "count": 35
+ },
+ {
+   "year": 2008,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 23172,
+   "count": 8
+ },
+ {
+   "year": 2009,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 104373,
+   "count": 17
+ },
+ {
+   "year": 2010,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 57202,
+   "count": 7
+ },
+ {
+   "year": 2011,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 47381,
+   "count": 12
+ },
+ {
+   "year": 2012,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 417744,
+   "count": 40
+ },
+ {
+   "year": 2013,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 54013,
+   "count": 10
+ },
+ {
+   "year": 2014,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 20586,
+   "count": 8
+ },
+ {
+   "year": 2015,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 4177,
+   "count": 2
+ },
+ {
+   "year": 2016,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 95376,
+   "count": 23
+ },
+ {
+   "year": 2017,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 223977,
+   "count": 23
+ },
+ {
+   "year": 2018,
+   "state_name": "Utah",
+   "state_abbr": "UT",
+   "total_ac": 500322,
+   "count": 28
+ },
+ {
+   "year": 2000,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 27319,
+   "count": 3
+ },
+ {
+   "year": 2001,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 2373,
+   "count": 3
+ },
+ {
+   "year": 2002,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 11645,
+   "count": 7
+ },
+ {
+   "year": 2003,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 1797,
+   "count": 1
+ },
+ {
+   "year": 2004,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 1495,
+   "count": 2
+ },
+ {
+   "year": 2005,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 1675,
+   "count": 2
+ },
+ {
+   "year": 2006,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 12780,
+   "count": 9
+ },
+ {
+   "year": 2007,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 5207,
+   "count": 6
+ },
+ {
+   "year": 2008,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 21982,
+   "count": 9
+ },
+ {
+   "year": 2009,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 602,
+   "count": 1
+ },
+ {
+   "year": 2010,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 14512,
+   "count": 11
+ },
+ {
+   "year": 2011,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 15327,
+   "count": 9
+ },
+ {
+   "year": 2012,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 49046,
+   "count": 11
+ },
+ {
+   "year": 2013,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 7212,
+   "count": 4
+ },
+ {
+   "year": 2014,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 20729,
+   "count": 8
+ },
+ {
+   "year": 2015,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 3751,
+   "count": 2
+ },
+ {
+   "year": 2016,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 27160,
+   "count": 7
+ },
+ {
+   "year": 2017,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 6445,
+   "count": 5
+ },
+ {
+   "year": 2018,
+   "state_name": "Virginia",
+   "state_abbr": "VA",
+   "total_ac": 9915,
+   "count": 5
+ },
+ {
+   "year": 2000,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 323274,
+   "count": 16
+ },
+ {
+   "year": 2001,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 200632,
+   "count": 20
+ },
+ {
+   "year": 2002,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 81525,
+   "count": 11
+ },
+ {
+   "year": 2003,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 192705,
+   "count": 23
+ },
+ {
+   "year": 2004,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 72809,
+   "count": 9
+ },
+ {
+   "year": 2005,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 125677,
+   "count": 15
+ },
+ {
+   "year": 2006,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 404773,
+   "count": 23
+ },
+ {
+   "year": 2007,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 240275,
+   "count": 28
+ },
+ {
+   "year": 2008,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 107637,
+   "count": 19
+ },
+ {
+   "year": 2009,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 69237,
+   "count": 7
+ },
+ {
+   "year": 2010,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 102388,
+   "count": 19
+ },
+ {
+   "year": 2011,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 26128,
+   "count": 8
+ },
+ {
+   "year": 2012,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 342957,
+   "count": 31
+ },
+ {
+   "year": 2013,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 142906,
+   "count": 14
+ },
+ {
+   "year": 2014,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 415041,
+   "count": 19
+ },
+ {
+   "year": 2015,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 1157155,
+   "count": 43
+ },
+ {
+   "year": 2016,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 289930,
+   "count": 26
+ },
+ {
+   "year": 2017,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 400869,
+   "count": 28
+ },
+ {
+   "year": 2018,
+   "state_name": "Washington",
+   "state_abbr": "WA",
+   "total_ac": 405308,
+   "count": 35
+ },
+ {
+   "year": 2001,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 1109,
+   "count": 2
+ },
+ {
+   "year": 2003,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 2684,
+   "count": 4
+ },
+ {
+   "year": 2005,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 4123,
+   "count": 2
+ },
+ {
+   "year": 2006,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 2837,
+   "count": 3
+ },
+ {
+   "year": 2007,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 5384,
+   "count": 7
+ },
+ {
+   "year": 2008,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 1110,
+   "count": 2
+ },
+ {
+   "year": 2009,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 2008,
+   "count": 3
+ },
+ {
+   "year": 2010,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 1236,
+   "count": 1
+ },
+ {
+   "year": 2013,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 9770,
+   "count": 3
+ },
+ {
+   "year": 2014,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 2116,
+   "count": 1
+ },
+ {
+   "year": 2015,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 2768,
+   "count": 2
+ },
+ {
+   "year": 2016,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 2682,
+   "count": 1
+ },
+ {
+   "year": 2018,
+   "state_name": "Wisconsin",
+   "state_abbr": "WI",
+   "total_ac": 2393,
+   "count": 3
+ },
+ {
+   "year": 2000,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 12144,
+   "count": 10
+ },
+ {
+   "year": 2001,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 66016,
+   "count": 48
+ },
+ {
+   "year": 2005,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 2571,
+   "count": 2
+ },
+ {
+   "year": 2006,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 966,
+   "count": 1
+ },
+ {
+   "year": 2008,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 677,
+   "count": 1
+ },
+ {
+   "year": 2009,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 1754,
+   "count": 2
+ },
+ {
+   "year": 2010,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 11960,
+   "count": 9
+ },
+ {
+   "year": 2012,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 3561,
+   "count": 3
+ },
+ {
+   "year": 2013,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 2533,
+   "count": 2
+ },
+ {
+   "year": 2014,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 1069,
+   "count": 1
+ },
+ {
+   "year": 2015,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 9974,
+   "count": 6
+ },
+ {
+   "year": 2016,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 2792,
+   "count": 3
+ },
+ {
+   "year": 2017,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 3657,
+   "count": 3
+ },
+ {
+   "year": 2018,
+   "state_name": "West Virginia",
+   "state_abbr": "WV",
+   "total_ac": 2473,
+   "count": 1
+ },
+ {
+   "year": 2000,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 350234,
+   "count": 37
+ },
+ {
+   "year": 2001,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 57638,
+   "count": 14
+ },
+ {
+   "year": 2002,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 110911,
+   "count": 17
+ },
+ {
+   "year": 2003,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 64786,
+   "count": 13
+ },
+ {
+   "year": 2004,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 15026,
+   "count": 5
+ },
+ {
+   "year": 2005,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 22419,
+   "count": 8
+ },
+ {
+   "year": 2006,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 236521,
+   "count": 31
+ },
+ {
+   "year": 2007,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 91179,
+   "count": 21
+ },
+ {
+   "year": 2008,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 95876,
+   "count": 5
+ },
+ {
+   "year": 2009,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 30366,
+   "count": 10
+ },
+ {
+   "year": 2010,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 83999,
+   "count": 16
+ },
+ {
+   "year": 2011,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 107634,
+   "count": 20
+ },
+ {
+   "year": 2012,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 429525,
+   "count": 32
+ },
+ {
+   "year": 2013,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 42591,
+   "count": 7
+ },
+ {
+   "year": 2014,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 3130,
+   "count": 2
+ },
+ {
+   "year": 2015,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 22113,
+   "count": 8
+ },
+ {
+   "year": 2016,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 257866,
+   "count": 21
+ },
+ {
+   "year": 2017,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 113701,
+   "count": 10
+ },
+ {
+   "year": 2018,
+   "state_name": "Wyoming",
+   "state_abbr": "WY",
+   "total_ac": 216635,
+   "count": 15
+ }
+]

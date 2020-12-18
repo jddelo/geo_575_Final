@@ -2,6 +2,7 @@
 //create blank function to create info window dialog when DOM is ready
 $(function () {
     $("#infowindow").dialog({
+        scrollTop: 0,
         autoOpen: true,
         height: 400,
         width: 900
